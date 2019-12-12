@@ -1,0 +1,187 @@
+ @media (max-device-width: 1024px){
+ 	ul.portfolioFilter{
+		padding: 0 10px;
+	}
+	.portfolioFilter > li:last-child{
+		margin-right: 0;
+	}
+	.portfolioFilter > li{
+		margin-right: 5px;
+		margin-left: 0;
+		margin-bottom: 10px;
+	}
+	.portfolioFilter li a{
+		padding: 0 5px;
+		 border-bottom: 1px solid #f89800;
+	}
+	.portfolioContainer .nav-tabs > li{
+		margin-bottom: 10px;
+		margin-left: 0;
+		margin-right: 5px;
+	}
+ }
+  @media (max-device-width: 991px){
+  	.sectio-one{
+		width:48%;
+	}
+	.sut-form{
+		margin-left: 0;
+		 margin-top: 10px;
+	}
+	.margin-bottom {
+	    margin-bottom: 15px;
+	}
+	.student-attendance .form-group.attendance-section{
+		width: 45%;
+	}
+	.input-group .sut-form, .cart-title .sut-form{
+		margin-top: 0;
+	}
+	.mange-report textarea.form-control{
+		width: 65%;
+		margin-right: 3%;
+	}
+	#datetimepicker .form-control, .sectio-one label{
+		width: 100%;
+		text-align: left;
+	}
+	.sut-form{
+		margin-top: 0;
+	}
+	.mid-content-inner .sut-form{
+		padding: 0 23px !important;
+	}
+	.form-group.attendance-section > select {
+	    width: 60%;
+	}
+	.sut-form{
+		width: 140px;
+	}
+	.form-group.sectio-two, .choose-year, .choose-event, .form-group.sectio-three{
+		width: 100% !important;
+	}
+	.form-group.sectio-two label, .choose-year label, .choose-event label, .form-group.sectio-three label{
+	    width: 30%;
+	}
+	.choose-year.choose-month input, .choose-event textarea, .sectio-three .form-control{
+		width: 60% !important;
+	}
+	.choose-event textarea{
+		margin-left: 0;
+	}
+	.border-top{
+		display: none;
+	}
+  }
+ @media (max-device-width: 677px){
+ 	.sectio-one {
+	    width: 100%;
+	}
+	/*.form-group{
+		display: block;
+	}*/
+	.choose-event{
+		width: 50%;
+	}
+	.choose-year, .form-group.sectio-two.new-add > label{
+		width: 100% !important;
+	}
+	.choose-event, .form-group.sectio-two, .sectio-one input.form-control, .sectio-one textarea {
+    width: 96%;
+	}
+	.sectio-one label, .form-group.sectio-two .form-control, .notice-form .sectio-one label{
+		width: 100%;
+		text-align: left;
+	}
+ }
+ @media all and (max-width:479px){
+ 	.form-section{
+		margin: 0;
+	}
+	.choose-year input, .choose-year.choose-month input{
+		width: 100% !important;
+	}
+	.choose-event textarea, .sectio-one input.form-control{
+		width: 100%;
+		margin-left: 0;
+	}
+	.choose-year input{
+		margin-left: 0;
+	}
+	.class-teacher-form .choose-year, .sectio-three .form-control, .form-group.sectio-three{
+	    width: 100%;
+		display: block;
+	}
+	.pop-section select, .promote-student select, .promote-student label, .student-attendance .form-group.attendance-section, .form-group.attendance-section > select, .n-student .form-group label, .n-student .form-group .form-control, .recent-record .form-control, .n-student .form-group .form-control.full-width, .choose-event, .add-new-staff, .n-student .form-group .radio-btn.new-staff, .n-student .form-group .radio-btn, .print-mark .form-group label, .mange-report .form-group label, .mange-report textarea.form-control, .cart-title .form-control, .grading-setting label, .grading-setting input.mid-input, .print-mark .form-group select, .print-mark.add-exam-type .form-group label, .recevid-book label, .recevid-book .input-group.date, .t-Management1 .form-control, .form-group.account-type label, .form-group.account-type select, .ab-section .form-group label, .ab-section .form-group .form-control, .master-account .form-group, .master-account.grnerate-salary .form-group select, .master-account.grnerate-salary .form-group.add-btn, .feedback-col .form-group > label, .feedback-col .form-group > select, .manage-mark .recevid-book label, .attendance-list li, .teacher-salary-list li, .feedback-col textarea.form-control, .inner-section-col .recevid-book label, .salary-details .form-group > label, .salary-details .form-group > select, .manage-pact .form-group > label, .manage-pact .form-group > select, .paid-salary .form-group > label, .paid-salary .form-group > select, .paid-salary .form-group > .input-group.date, .issue-bool-col .form-control, .input-group.date, .irb-col .form-control{
+		width: 100% !important;
+	}
+	.student-list-col li{
+		margin-left: 0;
+		font-size: 13px;
+		margin-bottom: 5px;
+	}
+	.student-list-col li span{
+		float: right;
+	}
+	.add-fee label, .add-fee select, .ab-section.salary-head select, .master-account label, .master-account .form-control, .master-account .input-group.date, .master-account select, .manage-exam .form-control{
+		float: none;
+		width: 100%;
+	}
+	.n-student .form-group b{
+		display: block;
+	}
+	.upload-section{
+		width: 100%;
+		display: block !important;
+	}
+	.input-group .form-control{
+		width: 60%;
+	}
+	.mange-report .form-group span.input-group-btn{
+		width:40%;
+	}
+	.input-group .sut-form, .cart-title .sut-form{
+		margin-left:0;
+		margin-top: 10px;
+	}
+	.mange-report textarea.form-control{
+		margin-right: 0;
+	}
+	.sut-form{
+		margin-top: 10px;
+	}
+	.grading-setting label.small-label, .grading-setting input.small-input{
+		display: block; 
+		width: 100%;
+	}
+	.add-exam-type .full-width, .recevid-book.form-group select, .form-group.recevid-book input.form-control.full-width, .form-group.recevid-book textarea.form-control{
+		width: 100% !important;
+	}
+	.search-wise select, .search-wise span, .search-wise label, .search-wise .form-control.small-input{
+		width: 100%;
+		margin-left: 0;
+	}
+	
+.total-account-list li {
+	    display: block;
+	    margin-bottom: 20px;
+	    margin-left: 0;
+	    text-align: center;
+	}
+	.sut-form{
+		margin-left: 0;
+		margin-top:15px;
+	}
+	.recevid-book.form-group{
+		display: inline-block;
+	}
+	.tabel-container{
+		padding: 20px;
+	}
+	.sut-form{
+		width: 175px;
+	}
+	.inner-section-col .recevid-book.form-group select, .inner-section-col .recevid-book.form-group input.form-control.full-width, .inner-section-col .recevid-book .input-group.date, .inner-section-col .teacher-form1 .form-control{
+		width: 100% !important;
+	}
+ }

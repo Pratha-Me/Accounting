@@ -1,0 +1,1266 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700);
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+a,a:hover{
+	text-decoration: none;
+}
+ul{
+	margin: 0;
+	padding:0;
+}
+img{
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+#header{
+	background: #303f9f;
+}
+/*.container {
+    width: 940px;
+}
+*/
+.center-content.user-login{
+	max-width: 100%;
+}
+.center-content{
+	max-width: 300px;
+	/*left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translateX(-50%);*/
+	width: 100%;
+	margin: 0px auto;
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin-top: 20px; 
+}
+
+h2.form-signin-heading{
+	background: #2e6da4;
+	color: #fff;
+	font-size: 22px;
+	padding: 10px;
+	margin-bottom:  25px;
+	margin-top:0px;
+}
+.form-signin button{
+	margin-top: 25px;
+	border-radius: 0;
+}
+.form-signin .checkbox{
+	margin-top: 20px;
+}
+.form-signin input{
+	border-radius: 0;
+}
+
+.input-wrap{
+	position:  relative;
+}
+.input-wrap input[type="password"], .input-wrap input[type="email"]{
+	padding-left: 50px;
+}
+.input-icon{
+	background: #5262bc none repeat scroll 0 0;
+    padding: 6px;
+    position: absolute;
+    top: 0px;
+}
+
+.input-icon:after{
+	content: "";
+	width: 0;
+	height: 0;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	border-left: 8px solid #5262bc;
+	position: absolute;
+	right: -8px;
+	top: 50%;
+	margin-top: -8px;
+	/*transform: translate(0, -50%);*/
+
+}
+.input-icon i{
+	color: #5262bc;
+	background: #fff;
+	width: 22px;
+	text-align:  center;
+	border-radius: 50%;
+	line-height: 22px;
+}
+
+
+/*Footer Section*/
+#footer{
+	text-align:  center;
+	margin-top: 35px;
+	background: #303f9f;
+	color: #fff;
+	padding: 25px 0;
+}
+#footer p{
+
+}
+#footer p a{
+	background: #fff;
+	width: 28px;
+	height: 28px;
+	display: inline-block;
+	border-radius: 50%;
+}
+#footer p a i{
+	line-height: 28px;
+	color: #303f9f;
+}
+ /*Top User Details */
+ .user-detail{
+ 	padding-top: 10px;
+ }
+ .user-detail p{
+ 	color: #fff;
+ }
+ .user-detail p span, .user-detail p span a{
+ 	color: #f89800;
+ }
+ /*Nav Bar*/
+  .page-container .dropdown-menu{
+  	top: 147px;
+	margin-top: 20px;
+  }
+ .wrapper #content-container {
+    margin-top: 20px;
+}
+.filter_section .heading-section h3, #blog .heading-section h3 {
+    display: inline-block;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.isotope-item {
+    z-index: 2;
+}
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+}
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
+}
+/*.portfolioFilter{
+	 border-bottom: 1px solid #E1E1E1;
+    border-left: 1px solid #E1E1E1;
+    border-right: 1px solid #E1E1E1;
+    list-style: none outside none;
+    margin: 1% 1% 1% -1px;
+    padding: 0;
+    width: 101%;
+}*/
+.stunning-luxury .portfolioFilter {
+    margin: 0 auto 40px;
+   /* width: 84%;*/
+}
+.portfolioFilter > li:first-child{
+	margin-left: 0;
+}
+.portfolioFilter > li {
+    display: inline-block;
+	float: none;
+	margin-left: 7px;
+}
+.portfolioFilter li.active a, .portfolioFilter li:hover a, .portfolioFilter li:focus a {
+    color: #fff;
+	background: #303f9f;
+}
+.portfolioFilter li a{
+    color: #6451b5;
+    cursor: pointer;
+    display: block;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    padding: 0 8px;
+	line-height: 30px;
+    text-decoration: none;
+	font-size: 12px;
+	border: 1px solid #f89800;
+	border-bottom: none;
+	border-radius: 0;
+}
+ul.portfolioFilter {
+    border-bottom: 1px solid #b6b6b6;
+	padding: 0 20px;
+	margin-bottom: 15px;
+}
+.portfolioContainer .nav-tabs > li:first-child{
+	margin-left: 0;
+}
+.portfolioContainer .nav-tabs{
+	text-align: center;
+}
+.portfolioContainer .nav-tabs > li{
+	margin-left: 5px;
+	float: none;
+	display: inline-block;
+}
+.portfolioContainer .nav-tabs{
+	border: none;
+}
+.portfolioContainer {
+    margin: 0 20px;
+}
+.portfolioContainer li a {
+    background: #3f51b5;
+    border-radius: 0;
+    color: #fff;
+    font-size: 13px;
+    line-height: 30px;
+    padding: 0 6px;
+	margin-right: 0;
+}
+.full-width{
+	width:100% !important;
+}
+.second-tab-content{
+    border: 1px solid #b6b6b6;
+    margin-top: 20px;
+    padding: 15px 20px;
+	/*overflow: hidden;*/
+}
+fieldset{
+	border: 1px solid #f89800;
+	display: block;
+	padding:0 15px 25px;
+}
+legend{
+	padding:0 15px;
+        font-weight: bold;
+	border: none;
+	width: auto;
+	margin: 0;
+	font-family: Arial;
+	color: #000;
+	font-size: 16px;
+}
+.form-group{
+	margin-bottom: 0;
+	margin-top: 15px;
+}
+.sectio-one{
+	width: 49%;
+	display: inline-block;
+}
+.sectio-one label{
+	display: inline-block;
+    font-weight: normal;
+    margin-right: 5px;
+    text-align: center;
+    width: 23%;
+}
+.sectio-one input.form-control{
+	width: 75%;
+	display: inline-block;
+	border-radius: 0;
+}
+.sut-form:hover{
+	background: transparent;
+}
+.sut-form{
+	background: #c5cae9 none repeat scroll 0 0;
+    border: 1px solid #c5cae9;
+    display: inline-block;
+    line-height: 32px;
+    margin-left: 20px;
+    width: 225px;
+}
+.form-section {
+    margin: 0 15px;
+	width: 100%;
+}
+.content-txt{
+	margin-top: 20px;
+}
+.content-txt p{
+	font-size: 16px;
+	line-height: 30px;
+}
+
+.tabel-container {
+    border: 1px solid #f89800;
+    padding: 20px 30px;
+	margin-top: 15px;
+}
+tbody tr td:last-child, thead tr th:last-child{
+	text-align: center;
+}
+tbody tr td:first-child {
+    padding-left: 8px;
+}
+/*th{
+	 text-align: center;
+}*/
+tr{
+	margin-bottom:10px;
+}
+th, td{
+	padding-bottom: 10px;
+	font-weight: normal;
+	text-align: left;
+}
+.choose-year{
+	width: 252px;
+}
+.form-group{
+	display: inline-block;
+}
+label{
+	font-weight: bold;
+	line-height: 34px;
+}
+.choose-year.choose-month input{
+	width: 57% !important;
+}
+.choose-year input{
+    border-radius: 0;
+    display: inline-block;
+    margin-left: 6px;
+    width: 60% !important;
+}
+.choose-year textarea{
+	display: inline-block;
+}
+.choose-event{
+	width: 504px;
+}
+.choose-event textarea {
+    border-radius: 0;
+    display: inline-block;
+    margin-left: 17px;
+    vertical-align: middle;
+    width: 81%;
+}
+.tabel-container p{
+	margin-top: 50px;
+}
+.tabel-container {
+    overflow-x: auto;
+    width: 100%;
+}
+.portfolioContainer .nav > li > a:focus, .portfolioContainer .nav > li > a:hover{
+	background: none;
+	color: #000;
+}
+table{
+	width: 100%;
+}
+.form-group.sectio-two{
+	width: 33%;
+}
+.form-group.sectio-two .form-control{
+	display: inline-block; 
+	width:50%;
+	border-radius: 0;
+}
+.class-teacher-form .choose-year {
+    width: 320px;
+}
+.sectio-three .form-control, .form-group.sectio-three {
+    display: inline-block;
+}
+.form-group.sectio-three{
+	width: 20%;
+}
+.sectio-three .form-control{
+	width: 47%;
+	border-radius: 0;
+}
+.sectio-one textarea {
+    display: inline-block;
+    width: 81%;
+	vertical-align: middle;
+}
+.notice-form .sectio-one label{
+	width: 10%;
+}
+
+.n-student .form-group{
+	width: 100%;
+}
+.n-student .form-group label{
+	line-height: 34px;
+    width: 36%;
+	float: left;
+}
+.n-student .form-group .form-control, .recent-record .form-control{
+	border-radius: 0;
+    display: inline-block;
+    width: 60%;
+}
+.n-student .form-group .form-control.full-width{
+	display: inline-block;
+    width: 93% !important;
+}
+.n-student .form-group b{
+	display: inline-block;
+    vertical-align: middle;
+}
+.n-student .form-group .radio-btn.new-staff{
+	width: 35%;
+}
+.n-student .form-group .radio-btn{
+	width: 17%;
+}
+.n-student .form-group.radio-col input{
+	margin-left: 5px;
+}
+.n-student .date-section .form-control{
+	width: 51%;
+	margin-right: 2px;
+}
+.n-student .date-section label{
+	width: 31%;
+}
+.n-student .date-section1 label{
+	width: 22%;
+}
+.n-student .date-section1 .form-control{
+	width: 68%;
+}
+.upload-section{
+	display: inline-block !important;
+	margin-left: 30px;
+}
+.pop-section .form-group{
+	width: 100%;
+	display: block;
+	overflow: hidden;
+}
+option{
+	padding: 5px;
+}
+.pop-section select, .promote-student select{
+	width: 50%;
+}
+select{
+	float: left;
+    height: 34px;
+    line-height: 34px;
+	padding-left:5px;
+}
+.pop-section .form-control{
+	float: left;
+	width: 50%;
+	border-radius: 0;
+}
+.pop-section .form-group > span{
+	float: left;
+	margin-right: 30px;
+}
+.pop-section label{
+	width: 25%;
+	float: left;
+	text-align: left;
+}
+.promote-student label{
+	float: left;
+	width: 50%;
+}
+.promote-student .form-control{
+	width:50% !important;
+}
+.promote-student-table th{
+	vertical-align: top;
+}
+.tabel-container.promote-student-table select {
+    height: 25px;
+    width: 50%;
+}
+.small-input input{
+	width: 100%;
+}
+.student-attendance .form-group{
+	/*display: inline-block;*/
+	float: left;
+	width: 12%;	
+}
+.student-attendance .form-group.attendance-section{
+	width: 28%;
+	margin-right: 10px;
+}
+.student-attendance .form-group.attendance-section label{
+	margin-right: 10px;
+	float: left;
+}
+.form-control, .input-group-addon{
+	border-radius: 0;
+}
+.add-new-staff{
+	width: 60%;
+}
+tbody.staff-table input, .form-control.mid-input{
+	width: 45%;
+}
+/*.recent-record .sut-form{
+	float: left;
+}*/
+.recent-record .form-control{
+	width: 100%;
+}
+/*Media Queries*/
+
+@media (max-device-width: 480px)
+ {
+   .input-icon:after{
+		top: 28%;
+		transform: translate(0, -50%);
+	}
+	.input-icon{
+	    padding: 8px 7px;
+	}
+	.input-icon i{
+		width: 20px;
+		line-height: 20px;
+	}
+	#footer p a i{
+		padding-top: 4px;
+	}
+	.checkbox input[type="checkbox"]{
+		
+		margin-top: -2px;
+	}
+	
+	.portfolioFilter > li{
+		margin-bottom:5px;
+		margin-left:1px;
+		}
+		.portfolioFilter > li a{
+		border-bottom: 1px solid #f89800;
+		font-size:12px;
+		padding:0px 6px;
+		}
+ }
+  @media (max-device-width: 320px){
+ .portfolioFilter > li {
+    width: 100%;
+}
+}
+
+ @media (max-device-width: 991px){
+	.navbar-mind .nav a{
+		padding: 0 25px !important;
+	}
+ }
+ @media (max-device-width: 767px)
+ {
+ 	.logo h1 a img{
+ 		text-align:  center;
+ 		margin: 0 auto;
+ 	}
+ 	.user-detail{
+ 		text-align:  center;
+ 	}
+ 	.user-detail p{
+ 		margin-left:  25px;
+ 		text-align:  center;
+ 	}
+	.navbar-mind .nav li{
+		border: none !important;
+	}
+	.input-icon::after{
+		top: 75% !important;
+	}
+ }
+ /*date and time picker starts from here*/
+
+span.input-group-addon
+{ cursor:  ointer;}
+
+.bootstrap-datetimepicker-widget {
+    border-radius: 4px;
+    left: 0;
+    margin-top: 1px;
+    padding: 4px;
+    top: 0;
+    width: 250px;
+    z-index: 3000;
+}
+.bootstrap-datetimepicker-widget .btn {
+    padding: 6px;
+}
+.bootstrap-datetimepicker-widget:before {
+    border-bottom: 7px solid rgba(0, 0, 0, 0.2);
+    border-left: 7px solid rgba(0, 0, 0, 0);
+    border-right: 7px solid rgba(0, 0, 0, 0);
+    content: "";
+    display: inline-block;
+    left: 6px;
+    position: absolute;
+    top: -7px;
+}
+.bootstrap-datetimepicker-widget:after {
+    border-bottom: 6px solid #FFFFFF;
+    border-left: 6px solid rgba(0, 0, 0, 0);
+    border-right: 6px solid rgba(0, 0, 0, 0);
+    content: "";
+    display: inline-block;
+    left: 7px;
+    position: absolute;
+    top: -6px;
+}
+.bootstrap-datetimepicker-widget.pull-right:before {
+    left: auto;
+    right: 6px;
+}
+.bootstrap-datetimepicker-widget.pull-right:after {
+    left: auto;
+    right: 7px;
+}
+.bootstrap-datetimepicker-widget > ul {
+    list-style-type: none;
+    margin: 0;
+}
+.bootstrap-datetimepicker-widget .timepicker-hour, .bootstrap-datetimepicker-widget .timepicker-minute, .bootstrap-datetimepicker-widget .timepicker-second {
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 100%;
+}
+.bootstrap-datetimepicker-widget table[data-hour-format="12"] .separator {
+    margin: 0;
+    padding: 0;
+    width: 4px;
+}
+.bootstrap-datetimepicker-widget .datepicker > div {
+    display: none;
+}
+.bootstrap-datetimepicker-widget .picker-switch {
+    text-align: center;
+}
+.bootstrap-datetimepicker-widget table {
+    margin: 0;
+    width: 100%;
+}
+.bootstrap-datetimepicker-widget td, .bootstrap-datetimepicker-widget th {
+    border-radius: 4px;
+    height: 20px;
+    text-align: center;
+    width: 20px;
+}
+.bootstrap-datetimepicker-widget td.day:hover, .bootstrap-datetimepicker-widget td.hour:hover, .bootstrap-datetimepicker-widget td.minute:hover, .bootstrap-datetimepicker-widget td.second:hover {
+    background: none repeat scroll 0 0 #EEEEEE;
+    cursor: pointer;
+}
+.bootstrap-datetimepicker-widget td.old, .bootstrap-datetimepicker-widget td.new {
+    color: #999999;
+}
+.bootstrap-datetimepicker-widget td.active, .bootstrap-datetimepicker-widget td.active:hover {
+    background-color: #428BCA;
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.bootstrap-datetimepicker-widget td.disabled, .bootstrap-datetimepicker-widget td.disabled:hover {
+    background: none repeat scroll 0 center rgba(0, 0, 0, 0);
+    color: #999999;
+    cursor: not-allowed;
+}
+.bootstrap-datetimepicker-widget td span {
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 54px;
+    line-height: 54px;
+    margin: 2px;
+    width: 47px;
+}
+.bootstrap-datetimepicker-widget td span:hover {
+    background: none repeat scroll 0 0 #EEEEEE;
+}
+.bootstrap-datetimepicker-widget td span.active {
+    background-color: #428BCA;
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.bootstrap-datetimepicker-widget td span.old {
+    color: #999999;
+}
+.bootstrap-datetimepicker-widget td span.disabled, .bootstrap-datetimepicker-widget td span.disabled:hover {
+    background: none repeat scroll 0 center rgba(0, 0, 0, 0);
+    color: #999999;
+    cursor: not-allowed;
+}
+.bootstrap-datetimepicker-widget th.switch {
+    width: 145px;
+}
+.bootstrap-datetimepicker-widget th.next, .bootstrap-datetimepicker-widget th.prev {
+    font-size: 21px;
+}
+.bootstrap-datetimepicker-widget th.disabled, .bootstrap-datetimepicker-widget th.disabled:hover {
+    background: none repeat scroll 0 center rgba(0, 0, 0, 0);
+    color: #999999;
+    cursor: not-allowed;
+}
+.bootstrap-datetimepicker-widget thead tr:first-child th {
+    cursor: pointer;
+}
+.bootstrap-datetimepicker-widget thead tr:first-child th:hover {
+    background: none repeat scroll 0 0 #EEEEEE;
+}
+.input-group.date .input-group-addon span {
+    color: #909296;
+    cursor: pointer;
+    display: block;
+    height: 20px;
+    width: 20px;
+	font-size: 16px;
+}
+.bootstrap-datetimepicker-widget.left-oriented:before {
+    left: auto;
+    right: 6px;
+}
+.bootstrap-datetimepicker-widget.left-oriented:after {
+    left: auto;
+    right: 7px;
+}
+.bootstrap-datetimepicker-widget ul.list-unstyled li.in div.timepicker div.timepicker-picker table.table-condensed tbody > tr > td {
+    padding: 0 !important;
+} 
+/*.date{
+	margin-bottom: 20px;
+}*/
+.mange-report .form-group label{
+	float: left;
+	margin-right: 5px;
+	width: 22%;
+}
+.mange-report .form-group, .print-mark .form-group{
+	width: 100%;
+}
+.mange-report .form-group span{
+	float: left;
+	width: 29%;
+}
+.recevid-book label{
+	float: left;
+	width: 40%;
+}
+.recevid-book .input-group.date {
+    float: left;
+    width: 60%;
+}
+.recevid-book.form-group{
+	display: block;
+	width: 100%;
+}
+.recevid-book.form-group select, .form-group.recevid-book input.form-control.full-width, .form-group.recevid-book textarea.form-control{
+	width: 60% !important;
+}
+.form-control.small-input {
+    width: 35%;
+}
+.grading-setting label{
+	float: left;
+	width: 25%;
+}
+.grading-setting label.small-label{
+	width: 10%;
+}
+.grading-setting input.small-input{
+	float: left;
+	width: 15%;
+	margin-right: 5%;
+}
+.grading-setting input.mid-input{
+	width: 40%;
+}
+.print-mark .form-group label{
+	float: left;
+    width: 45%;
+}
+.print-mark .form-group select{
+    width: 55%;
+}
+.print-mark .form-group .sut-form{
+	margin-left: 0;
+}
+.add-exam-type .full-width{
+	width: 60% !important;
+}
+.print-mark.add-exam-type .form-group label{
+	width: 35%;
+}
+
+	.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+.btn-file input[type=file] {
+  opacity: 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 0;
+	height: 100%;
+}
+input[readonly] {
+  background-color: white !important;
+  cursor: text !important;
+}
+.mange-report .form-group span.input-group-btn{
+	width: 29%;	
+}
+.mange-report .form-group span.input-group-btn span{
+	border-radius: 0;
+	width: 100%;
+}
+.input-group .form-control {
+    width: 45%;
+}
+.input-group .sut-form, .cart-title .sut-form{
+	margin-left: 15px;
+	padding: 0 15px;
+}
+.mange-report textarea.form-control {
+    float: left;
+    width: 72%;
+}
+.margin-top {
+    margin-top: 20px;
+}
+.cart-title .form-control{
+	float: left;
+    width: 57%;
+}
+.checkbox-span{
+	display: block;
+    line-height: 34px;
+    margin-right: 15px;
+    width: auto !important;
+}
+.checkbox-span .sut-form{
+	margin-left: 14px;
+    padding: 0 27px;
+}
+.sut-form{
+	margin-top: 0;
+}
+#datetimepicker .form-control{
+	width: 100%;
+}
+.t-Management{
+	margin: 15px 0 35px;
+}
+.t-Management1 .form-control {
+    width: 55%;
+}
+.tabel-container.report-vechicle{
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+.border-top {
+    border-bottom: 1px solid #f89800;
+    padding-bottom: 15px;
+}
+.border-top thead{
+	margin-top: 10px;
+}
+.search-wise label{
+	float: left;
+}
+.search-wise select {
+    margin-left: 3%;
+    width: 40%;
+}
+.search-wise span{
+	display: inline-block;
+    margin-left: 3%;
+    width: 45%;
+}
+.search-wise .form-control.small-input {
+    margin-left: 5%;
+    width: 65%;
+}
+.ab-section .form-group.margin-top{
+	margin-top: 15px;
+}
+.ab-section .form-group{
+	margin-top: 0;
+}
+.ab-section .form-group label{
+	width: 55%;
+	float: left;
+}
+.ab-section .form-group .form-control{
+	width: 45%;
+}
+.add-fee .form-control{
+	width: 65%;
+	float: right;
+}
+.add-fee label{
+	float: left;
+}
+.add-fee select {
+    float: right;
+}
+.add-fee span:first-child{
+	margin-left: 0;
+}
+.add-fee span {
+    margin-left: 15px;
+}
+.master-account .form-group {
+    display: block;
+    width: 40%;
+}
+.master-account .form-control, .master-account .input-group.date, .master-account select, .manage-exam .form-control {
+    float: right;
+    width: 51%;
+}
+.tabel-container.ledger-detail{
+	border: none;
+	padding: 0;
+}
+.tabel-container.ledger-detail .t-Management{
+	margin-top: 0;
+}
+.ab-section.salary-head select, .master-account label{
+	width: 45%;
+}
+.master-account.grnerate-salary .form-group{
+	margin-right: 10px;
+	display: inline-block;
+}
+.master-account.grnerate-salary .form-group select{
+	width: 48%;
+}
+.master-account.grnerate-salary .form-group.add-btn{
+	width: 10%;
+}
+.checkbox-col{
+	margin-left: 20px !important;
+}
+.recevid-book.upload-salary label{
+	width: 48%
+}
+.recevid-book.upload-salary select{
+	width: 50% !important;
+	float: right;
+}
+.unlist-style {
+    margin: 20px 0;
+    padding: 0;
+}
+.unlist-style li:first-child{
+	margin-left: 0;
+}
+.unlist-style li{
+	list-style: none;
+	display: inline-block;
+	width: 22%;
+	margin-left: 2%;
+}
+.unlist-style li span{
+	color: #727272;
+	float: right;
+}
+.salary-report p span{
+	color: #727272;
+	margin: 10px;
+	display: block;
+	margin-left: 50px;
+}
+.inner-border {
+    border: 1px solid #f89800;
+    margin-top: 15px;
+    padding: 0 15px;
+}
+.tabel-container.ledger-detail.specific span {
+    display: inline-block;
+}
+.tabel-container.ledger-detail.specific span label, .tabel-container.ledger-detail.specific span input, .specific-particular label{
+	float: left;
+}
+.tabel-container.ledger-detail.specific span input.form-control{
+	width: 85%;
+	margin-left:2px;
+}
+.specific-particular .input-group.date, .specific-particular select{
+	width: 80%;
+	float: right;
+}
+.collect-free .form-group{
+	margin-top: 0;
+}
+.form-group.account-type{
+	margin-top: 0;
+}
+.form-group.account-type label, .form-group.account-type select{
+	width: 50%;
+}
+.form-group.account-type label{
+	float: left;
+}
+.sms-detail{
+	width: 80% !important;
+	float: left !important;
+}
+.total-account-list{
+	margin: 20px 0 0;
+	padding: 0;
+}
+.total-account-list li:first-child{
+	margin-left: 0;
+}
+.total-account-list li{
+	list-style: none;
+	display: inline-block;
+	margin-left: 165px;
+}
+.total-account-list li span{
+	display: block;
+	text-align: center;
+	color: #727272;
+}
+
+
+.side-nav-tab li:first-child{
+	margin-top: 0;
+}
+.side-nav-tab li {
+    background: #3f51b5;
+    display: block;
+    line-height: 40px;
+    list-style: outside none none;
+    margin-top: 2px;
+    text-align: center;
+}
+.side-nav-tab li a{
+    color: #fff;	
+}
+.second-tab-content {
+    border: 1px solid #b6b6b6;
+    margin-top: 20px;
+    /*overflow: hidden;*/
+    padding: 15px 20px;
+}
+.mid-content-inner .second-tab-content{
+	margin-top: 0px;
+}
+.home-work {
+    margin-top: 15px;
+}
+.attendance-list li, .teacher-salary-list li {
+    display: inline-block;
+    margin-top: 15px;
+    width: 49%;
+	color: #727272;
+}
+
+.attendance-list li span, .teacher-salary-list li span{
+	color: #333;
+    display: inline-block;
+    width: 50%;
+}
+.home-work td, .home-work th{
+	text-align: center;
+}
+.home-work td{
+	color: #777;
+}
+.home-work tbody tr td:first-child{
+	padding: 0;
+}
+.teacher-panel .side-nav-tab li{
+	margin-left: 0;
+}
+.teacher-panel .portfolioFilter li a{
+	border: none;
+	margin: 0;
+	line-height: 40px;
+}
+.teacher-panel ul.portfolioFilter{
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+.teacher-salary-list li span{
+	width: 70%;
+}
+.teacher-salary-list li{
+	width: 32%;
+}
+.teacher-salary-list p span{
+	color: #777;
+}
+.teacher-form{
+	margin-top: 15px;
+}
+#myModal {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.mid-content-inner .sut-form{
+	padding: 0 29px;
+}
+.teacher-form th, .teacher-form td{
+	text-align: center;
+	vertical-align: top;
+}
+.home-work-form .recevid-book .input-group.date{
+	width: 70%;
+}
+.home-work-form .recevid-book label{
+	width: 30%;
+}
+.teacher-form1 .form-control{
+	width: 60%;
+}
+.teacher-form1 .sut-form{
+	padding: 0 20px;
+}
+.feedback-col .form-group > label {
+    float: left;
+    width: 25%;
+}
+.feedback-col .form-group > select {
+    width: 20%;
+}
+.feedback-col textarea.form-control{
+    width: 45%;
+}
+.calendar label, .calendar span{
+	text-align: center;
+	display: block;
+}
+.calendar span{
+	color: #777;
+	margin-top:5px;
+}
+.manage-mark .recevid-book.form-group select{
+	width: 52% !important;
+}
+.manage-mark .recevid-book label{
+	width: 48%;
+}
+.form-control.half-width {
+    margin: 0 auto;
+    width: 65%;
+}
+.other-mark .form-control {
+    width: 52%;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+.inner-section-col .sut-form{
+	margin-left: 10px;
+	padding: 0 27px;
+}
+.inner-section-col .recevid-book label{
+	width:46%; 
+}
+.inner-section-col .recevid-book.form-group input.form-control.full-width, .inner-section-col .recevid-book.form-group select, .inner-section-col .recevid-book.form-group textarea.form-control{
+	width: 54% !important;	
+}
+.inner-section-col .recevid-book .input-group.date, .inner-section-col .teacher-form1 .form-control{
+	width: 54%;
+}
+.full-content .col-sm-6{
+	clear: both;
+}
+.paid-salary .form-group, .salary-details .form-group {
+    width: 100%;
+}
+.paid-salary .form-group > label {
+    float: left;
+    width: 53%;
+}
+.paid-salary .form-group > select, .paid-salary .form-group > .input-group.date{
+    float: left;
+    width: 47%;
+}
+.salary-details .form-group > label{
+	width: 35%;
+    float: left;
+}
+.salary-details .form-group > select{
+    float: left;
+	width: 65%;	
+}
+.salary-details-list > ul {
+    clear: both;
+    margin: 20px 0;
+    overflow: hidden;
+}
+.salary-details-list li {
+    color: #777;
+    float: left;
+    list-style: outside none none;
+    width: 25%;
+}
+.salary-details-list span {
+    color: #040404;
+    margin-right: 20px;
+}
+.salary-details-list p span{
+	color: #777;
+	margin-left: 20px;
+}
+.paid-salary .form-group.calculate > label{
+	width: 78%;
+}
+input[type="checkbox"], input[type="radio"]{
+	vertical-align: middle;
+}
+.manage-pact .form-group > label {
+    float: left;
+    width: 58%;
+}
+.manage-pact .form-group > select{
+	width: 42%;
+}
+.inner-section-col td, .inner-section-col th{
+	text-align: center;
+}
+td.add-specific{
+	text-align: left !important;
+}
+td.add-specific {
+    text-align: left !important;
+}
+.add-specific > span {
+    float: left;
+    margin-left: 10px;
+    width: 45%;
+}
+.add-specific .form-control {
+    float: right;
+    width: 74%;
+}
+.table-responsive .table th{
+	border: none;
+}
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th{
+	border: none;
+}
+th, td{
+	text-align: center;
+}

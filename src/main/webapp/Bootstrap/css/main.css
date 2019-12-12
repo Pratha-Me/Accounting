@@ -1,0 +1,573 @@
+/* Table of Content
+==================================================
+    #Reset
+    #Font-Face
+    #Basic Styles
+    #Typography
+    #Links
+    #Lists
+    #Images/Medias
+    #Others
+    -----------------------------------------------
+    #Site Layout
+    #Media Queries
+    
+    */
+
+/* #Font-Face
+================================================== */
+@font-face {
+  font-family: 'Verdana';
+  src: url('../../fonts/Verdana.eot?#iefix') format('embedded-opentype'),  url('../../fonts/Verdana.woff') format('woff'), url('.../../fonts/Verdana.ttf')  format('truetype'), url('../../fonts/Verdana.svg#Verdana') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+/* #Basic Styles
+================================================== */
+    body {
+            background: #FFF;
+            font-family: 'Verdana';
+            font-size: 38px;
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+            -webkit-text-size-adjust: 100%;
+            color: #000;
+            font-weight: normal;
+     }
+
+/* #Typography
+================================================== */
+    h1, h2, h3, h4, h5, h6 {
+        color: #000;
+        font-family: 'Verdana';
+        margin: 10px 0;
+        line-height: 1.1;
+        }
+    h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+    h1 { font-size: 42px; }
+    h2 { font-size: 36px; }
+    h3 { font-size: 24px; }
+    h4 { font-size: 22px; }
+    h5 { font-size: 18px; }
+    h6 { font-size: 16px; }
+
+    p { margin: 0 0 20px 0; }
+    p img { margin: 0; }
+
+    em { font-style: italic; }
+    i{font-style: normal;}
+    strong { font-weight: bold;}
+    small { font-size: 80%; }
+
+/* #Links
+================================================== */
+    a, a:visited { color: inherit; text-decoration: none;  outline: 0; }
+    a:focus{outline: 0;}
+    a:hover, a:focus { 
+        color: inherit; 
+        text-decoration: none;
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        -moz-transition: all 0.3s ease-in-out 0s;
+        -ms-transition: all 0.3s ease-in-out 0s;
+        -o-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+    }
+    p a, p a:visited { line-height: inherit; }
+
+/* #Lists
+================================================== */
+    ul, ol { margin: 0; padding: 0 }
+    ul { list-style: none outside; }
+    ol { list-style: decimal; }
+    ul ul, ul ol,
+    ol ol, ol ul { margin: 5px 0 5px 30px; font-size: 90%;  }
+    ul ul li, ul ol li,
+    ol ol li, ol ul li { margin-bottom: 6px; }
+    li { line-height: 18px; margin-bottom: 0; }
+    li p { line-height: 21px; }
+
+/* #Images
+================================================== */
+    img {
+        max-width: 100%;
+        height: auto;
+        width:auto;
+        vertical-align: middle;
+         }
+    
+/* #Others
+================================================== */
+    .main-menu ul:before, .main-menu ul:after,
+    .Receipt-logo-section:before, .Receipt-logo-section:after,
+    .Receipt-section:before, .Receipt-section:after,
+    .receipt-form-section:before, .receipt-form-section:after,
+    .footer-receipt-form:before, .footer-receipt-form:after {
+        clear: both;
+        display: block;
+        content: "";
+    }
+    
+    .alignright {
+        float: right;
+        margin: 0 0 10px 10px;
+    }
+    .alignleft {
+        float: left;
+        margin: 0 10px 10px 0;
+    }
+    
+
+
+/* #Site Layout
+================================================== */
+.container {
+    margin: 0 auto;
+    width: 2404px;
+}
+.Receipt-section {
+    background: rgba(0, 0, 0, 0) url("../../images/pattern.png") no-repeat scroll 0 0;
+    border: 1px solid;
+    overflow: hidden;
+    padding: 0 35px 35px 0;
+    position: relative;
+	margin-top: 30px;
+}
+.receipt-litle {
+    float: left;
+    left: -48%;
+    position: absolute;
+    text-align: center;
+    top: 39%;
+    width: 100%;
+}
+.receipt-section-wrap {
+    float: right;
+    width: calc(100% - 132px);
+}
+.logo {
+    float: left;
+}
+.right-logo-details {
+    float: left;
+    margin-left: 60px;
+    padding: 10px;
+	margin-top: 10px;
+}
+.date-details span {
+    font-size: 38px;
+}
+.rec-left {
+    text-align: left;
+}
+.date-right {
+    float: right;
+}
+.receipt-form {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    width: 1254px;
+    z-index: 999;
+}
+.receipt-form label {
+    display: inline-block;
+    float: left;
+    font-weight: 400;
+}
+.receipt-form input {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border-bottom: 8px dotted rgb(0, 0, 0);
+    border-top: medium none;
+    border-left: medium none;
+    border-right: medium none;
+    text-align: center;
+    padding: 0 30px;
+    width: 75%;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    opacity: 1;
+    color: #000;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    opacity: 1;
+    color: #000;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    opacity: 1;
+    color: #000;
+}
+:-moz-placeholder { /* Firefox 18- */
+    opacity: 1;
+    color: #000;
+}
+.receipt-amount-section {
+    float: right;
+    margin: 0 0 0 25px;
+    width: calc(100% - 1279px);
+}
+.receipt-amount-section table {
+    text-align: center;
+    width: 100%;
+}
+.receipt-amount-section table  td:first-child {
+    background: rgb(0, 0, 0) none repeat scroll 0 0;
+    color: rgb(255, 255, 255);
+    padding-left: 48px;
+    text-align: left;
+    width: 50%;
+}
+.receipt-amount-section table td {
+    border: 3px solid rgb(0, 0, 0);
+    padding: 34px;
+}
+.receipt-form-section {
+    padding-top: 45px;
+}
+.class-input, .roll-no-input {
+    float: left;
+    width: 50%;
+}
+.receipt-form p {
+    margin: 0 0 40px;
+}
+.left-single-form {
+    float: left;
+    width: 1630px;
+}
+.left-single-form label {
+    font-weight: 400;
+    width: 10%;
+}
+.left-single-form input {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border-bottom: 8px dotted rgb(0, 0, 0);
+    border-top: medium none;
+    border-left: medium none;
+    border-right: medium none;
+    padding: 0 30px;
+    text-align: center;
+    width: 89%;
+}
+.receipt-sign {
+    float: right;
+    text-align: center;
+    width: calc(100% - 1630px);
+}
+.receipt-sign > span {
+    border-top: 3px solid rgb(0, 0, 0);
+    display: inline-block;
+    margin: 35px 0 0;
+    padding: 0 20px;
+    text-align: center;
+}
+.receipt-litle h2 {
+    background: rgb(0, 0, 0) none repeat scroll 0 0;
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    font-style: italic;
+    font-weight: 900;
+    transform: rotate(-90deg);
+}
+.bill-section {
+    background: rgba(0, 0, 0, 0) url("../../images/bill-patten.png") no-repeat scroll 0 0 / cover ;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 35px;
+	overflow: hidden;
+	margin-top: 30px;
+}
+.site-logo {
+    float: left;
+}
+.date {
+    float: right;
+}
+.date > span {
+    font-size: 40px;
+}
+.bill-left-content {
+    float: left;
+    text-align: center;
+    width: 50%;
+}
+.bill-right-content {
+    float: right;
+    margin-top: -165px;
+    text-align: center;
+    width: 50%;
+}
+.bill-left-content h2 {
+    background: rgb(0, 0, 0) none repeat scroll 0 0;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    font-size: 42px;
+    font-weight: 700;
+    margin: 50px 0;
+    padding: 35px 0;
+    width: 522px;
+}
+.bill-details strong {
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    font-weight: 700;
+}
+.bill-details strong {
+    display: block;
+}
+.bill-details {
+    margin-bottom: 60px;
+}
+.bill-details span {
+    display: block;
+    font-size: 40px;
+}
+.bill-right-content table {
+    border: 1px solid #000;
+    text-align: left;
+    width: 100%;
+}
+.bill-right-content table td{
+    padding-left:20px; 
+}
+.bill-right-content table td:first-child {
+    padding-left: 60px;
+    border-right: 1px solid;
+    width: 754px;
+}
+.bill-right-content table td:last-child {
+    width: calc(100% - 754px);
+    text-align: center;
+}
+.bill-title {
+    background: rgb(0, 0, 0) none repeat scroll 0 0;
+    color: rgb(255, 255, 255) !important;
+    font-size: 42px !important;
+    padding: 37px 0 37px 85px !important;
+    text-align: left !important;
+    font-weight: 700;
+}
+.bill-right-content table td {
+    color: #000;
+    font-size: 40px;
+}
+.bill-details-title > td {
+    padding-left: 44px !important;
+    text-align: left !important;
+}
+.bill-right-content tr:nth-child(10) {
+    border-top: 1px solid #000;
+}
+tr:nth-child(9) td:last-child,
+tr:nth-child(10) td:last-child,
+tr:nth-child(11) td:last-child,
+tr:nth-child(12) td:last-child,
+tr:nth-child(13) td:last-child,
+tr:nth-child(14) td:last-child,
+tr:nth-child(15) td:last-child {
+    border-bottom: 1px solid;
+}
+tr:nth-child(9) td:first-child, 
+tr:nth-child(10) td:first-child, 
+tr:nth-child(11) td:first-child, 
+tr:nth-child(12) td:first-child, 
+tr:nth-child(13) td:first-child,
+tr:nth-child(14) td:first-child,
+tr:nth-child(15) td:first-child {
+    padding-right: 13px !important;
+    text-align: right !important;
+}
+.bill-right-content table td.bill-title:last-child {
+    padding: 30px !important;
+}
+.bill-details-title td {
+    font-weight: 700;
+}
+.bill-details-title td {
+    font-weight: 700;
+    padding-top: 20px;
+}
+.free-space td {
+    padding: 10px;
+}
+.bottom-free-space {
+    height: 530px;
+}
+/* #Media Queries
+================================================== */
+@media only screen and (min-width: 768px) {}
+@media only screen and (max-width: 1199px) {}
+/* Smaller than standard 1024 (devices and browsers) */
+@media only screen and (max-width:1023px){}
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width:767px){}
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width:479px){}
+.Receipt-section, .marksheet-section {
+    background: rgba(0, 0, 0, 0) url("../../images/pattern.png")  scroll 0 0;
+}
+.receipt-litle {
+    float: left;
+    width: 132px;
+}
+.receipt-section-wrap {
+    float: right;
+    width: calc(100% - 132px);
+}
+.logo {
+    float: left;
+}
+.logo-detail {
+    float: left;
+    padding-left: 60px;
+}
+.exam-details-wrap {
+    text-align: center;
+}
+.exam-details-wrap h3,
+.exam-details-wrap h2 {
+    border-bottom: 1px solid;
+    display: inline-block;
+    font-size: 76px;
+    margin: 40px 0 42px;
+    padding-bottom: 10px;
+}
+.left-exam-details {
+    float: left;
+    text-align: left;
+}
+.exam-details span {
+    display: block;
+    font-size: 40px;
+}
+.exam-right-details {
+    float: right;
+    padding-right: 60px;
+    text-align: left;
+}
+.exam-details-wrap h2 {
+    margin-top: 80px;
+}
+.marksheet-left-table {
+    float: left;
+    text-align: center;
+    width: 1342px;
+}
+.marksheet-left-table table {
+    border: 5px solid rgb(0, 0, 0);
+    width: 100%;
+}
+.marksheet-left-table table td {
+    padding: 10px 0;
+}
+.marksheet-left-table table tr:first-child {
+    border-bottom: 5px solid rgb(0, 0, 0);
+}
+.marksheet-left-table table td {
+    border-left: 5px solid rgb(0, 0, 0);
+    font-size: 36px;
+}
+.subject-list td:first-child {
+    padding-left: 35px;
+    text-align: left;
+}
+.marksheet-left-table tr:last-child td:last-child {
+    border-left: medium none;
+}
+.marksheet-left-table .free-space {
+    height: 875px;
+}
+.marksheet-content {
+    padding-bottom: 60px;
+}
+.subject-list:last-child {
+    border-top: 5px solid;
+}
+.marksheet-right-table {
+    float: right;
+    width: calc(100% - 1322px);
+}
+.marksheet-right-table {
+    float: right;
+    margin-left: 20px;
+    text-align: center;
+    width: calc(100% - 1362px);
+}
+.marksheet-right-table table {
+    border: 5px solid rgb(0, 0, 0);
+    width: 100%;
+}
+.marksheet-right-table td {
+    font-size: 38px;
+}
+.marksheet-right-table tr:first-child {
+    border-bottom: 5px solid rgb(0, 0, 0);
+}
+.marksheet-right-table tr:first-child td {
+    padding: 36px 0;
+}
+.marksheet-right-table td {
+    border-left: 5px solid;
+}
+.marksheet-right-table .free-space td {
+    height: 1042px;
+}
+.marksheet-Percentage {
+    float: left;
+    margin-top: 50px;
+    padding: 0 90px;
+    text-align: center;
+    width: 50%;
+}
+.marksheet-Percentage > table {
+    border: 5px solid rgb(0, 0, 0);
+    width: 100%;
+}
+.marksheet-Percentage td {
+    border: 5px solid;
+    font-size: 38px;
+    padding: 10px;
+}
+.marksheet-Percentage td:last-child {
+    border-bottom: none;
+}
+.marksheet-grading-section {
+    float: right;
+    padding-left: 90px;
+    width: 50%;
+}
+.marksheet-grading {
+    border: 5px solid rgb(0, 0, 0);
+    padding: 35px 20px;
+}
+.marksheet-grading ul {
+    padding-top: 20px;
+}
+.marksheet-grading li {
+    float: left;
+    font-size: 38px;
+    padding: 10px 20px;
+    width: 50%;
+}
+.marksheet-grading > h2 {
+    border-bottom: 5px solid rgb(0, 0, 0);
+    display: inline-block;
+    font-size: 40px;
+    margin-left: 20px;
+    padding-bottom: 10px;
+}
+.remark-section > h2 {
+    font-size: 46px;
+    font-weight: 700;
+    margin: 35px 0;
+}
+.remark-content {
+    border: 5px solid;
+    padding: 65px 0 150px 77px;
+}
+.footer-section {
+    padding: 160px 0 57px;
+}
