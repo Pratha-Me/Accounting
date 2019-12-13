@@ -38,7 +38,7 @@
                 <section>
                     <img src="<%=path%>/Bootstrap/image/user.jpg" alt="" class="img-responsive" />
                     <div>
-                        <input type='email' name="email" placeholder="email" id='email' class='form-control' value="me" required=""/>
+                        <input type='email' name="email" placeholder="email" id='email' class='form-control' value="ADMIN" required=""/>
                     </div>
                     <div >
                         <input type='password' name="name" placeholder="password" id='password' class='form-control' required=""/>

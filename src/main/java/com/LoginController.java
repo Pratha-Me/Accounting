@@ -59,8 +59,10 @@ public class LoginController {
         Map map = new HashMap();
         try {
             
-            String sql = "SELECT user AS userCode, pass AS dbPassword FROM test WHERE user ='" + loginId + "'";
-            
+//            String sql = "SELECT user AS userCode, pass AS dbPassword FROM test WHERE user ='" + loginId + "'";
+            String sql = "SELECT USER_CODE AS userCode, CAST(AES_DECRYPT(LOGIN_PASS,'SECRET') AS CHAR) AS dbPassword"
+					+ " FROM application_login WHERE USER_CODE ='"+ loginId +"';";
+			
             DB db = new DB();
             List list = db.getRecord(sql);
 	    /*	    for(int i = 0; i < list.size(); i++){
