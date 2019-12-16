@@ -27,76 +27,63 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @ComponentScan
 public class LoginController {
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String index() {
-        return "index";
-    }
+	@RequestMapping(value = "/", method = RequestMethod.GET)
+	public String index() {
+		return "index";
+	}
 
-    @RequestMapping(value = "Logout", method = RequestMethod.GET)
-    public String Logout() {
-        return "Logout";
-    }
+	@RequestMapping(value = "Logout", method = RequestMethod.GET)
+	public String Logout() {
+		return "Logout";
+	}
 
-    @RequestMapping(value = "/Login/Verify", method = RequestMethod.GET)
-    public String Login() {
-        return "/login/Verify";
-    }
-	
-    @RequestMapping(value = "/home", method = RequestMethod.GET)
-    public String home() {
-        return "home";
-    }
+	@RequestMapping(value = "/Login/{token}", method = RequestMethod.GET)
+	public String index(HttpSession session, @PathVariable String token) {
+		session.setAttribute("token", "Bearer " + token);
+		return "redirect:../home";
+	}
+@RequestMapping(value = "/home", method = RequestMethod.GET)
+	public String home() {
+		return "home";
+	}
 
-    @RequestMapping(value = "/Login/{token}", method = RequestMethod.GET)
-    public String index(HttpSession session, @PathVariable String token) {
-        session.setAttribute("token", "Bearer " + token);
-        return "home";
-    }
+	@RequestMapping(value = "/Login", method = RequestMethod.GET)
+	@ResponseBody
+	public Object login(@RequestParam String loginId, @RequestParam String password) {
+		Map map = new HashMap();
+		try {
 
-    @RequestMapping(value = "/Login", method = RequestMethod.GET)
-    @ResponseBody
-    public Object login(@RequestParam String loginId, @RequestParam String password) {
-        Map map = new HashMap();
-        try {
-            
-//            String sql = "SELECT user AS userCode, pass AS dbPassword FROM test WHERE user ='" + loginId + "'";
-            String sql = "SELECT USER_CODE AS userCode, CAST(AES_DECRYPT(LOGIN_PASS,'SECRET') AS CHAR) AS dbPassword"
-					+ " FROM application_login WHERE USER_CODE ='"+ loginId +"';";
-			
-            DB db = new DB();
-            List list = db.getRecord(sql);
-	    /*	    for(int i = 0; i < list.size(); i++){
-	    System.out.println(list.get(i));
-	    }
-	    */
-		
-	    if (list.isEmpty()) {
-                map.put("error", "Invalid login id");
-                return map;
-            }
+			String sql = "SELECT USER_CODE AS userCode, CAST(AES_DECRYPT(LOGIN_PASS,'SECRET') AS CHAR) AS dbPassword"
+					+ " FROM application_login WHERE USER_CODE ='" + loginId + "';";
 
-            map = (Map) list.get(0);
-//	    map.forEach((key, value) -> System.out.println(key + " : " + value));
+			DB db = new DB();
+			List list = db.getRecord(sql);
 
-            String userCode = map.get("userCode").toString();
-            String dbPassword = map.get("dbPassword").toString();
-//            System.out.println(dbPassword +" "+ userPassword +" "+ userCode);
+			if (list.isEmpty()) {
+				map.put("error", "Invalid login id");
+				return map;
+			}
 
-            if (dbPassword.equalsIgnoreCase(password)) {
-                map = new HashMap();
-                map.put("userCode", userCode);
-                map.put("msg", "Success");
-		
-                Token td = new Token();
-                String token = td.get(userCode, userCode, "ADM");
-                
-		map.put("token", token);
-                return map;
-            }
-            map.put("error", "invalid CREDENTIALS");
-        } catch (Exception e) {
-            System.out.println(e);
-        }
-        return map;
-    }
+			map = (Map) list.get(0);
+
+			String userCode = map.get("userCode").toString();
+			String dbPassword = map.get("dbPassword").toString();
+
+			if (dbPassword.equalsIgnoreCase(password)) {
+				map = new HashMap();
+				map.put("userCode", userCode);
+				map.put("msg", "Success");
+
+				Token td = new Token();
+				String token = td.get(userCode, userCode, "ADM");
+
+				map.put("token", token);
+				return map;
+			}
+			map.put("error", "invalid CREDENTIALS");
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+		return map;
+	}
 }

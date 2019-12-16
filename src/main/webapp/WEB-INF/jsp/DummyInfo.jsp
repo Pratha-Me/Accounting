@@ -5,7 +5,7 @@
 --%>
 
 <%@include file="login/header.jsp" %>
-<fieldset>  <legend>ADD AMOUNT</legend> 
+<fieldset>  <legend>ADD INFO</legend> 
     <form method='POST' id='dataFrom'> 
         <div class="row">
             <div class='col-lg-2 col-sm-2 col-md-2 col-xs-6' hidden>
@@ -37,7 +37,7 @@
 <script>
 
     function edit(sn) {
-        var id = ['id', 'name', 'amount'];
+        var id = ['id', 'name', 'surname'];
         for (var i = 0; i < id.length; i++)
             document.getElementById(id[i]).value = document.getElementById("dataTable").rows[sn].cells.item(i).innerHTML;
         $('#Update').show();
@@ -102,11 +102,11 @@
                     document.getElementById('table').innerHTML = '';
                     return false;
                 }
-                document.getElementById('table').innerHTML = "<table class = 'table table-bordered table-hover table-striped' id = 'dataTable'><thead><tr> <th hidden> id </th><th>Name</th> <th> Amount </th><th>Action</th></tr></thead ><tbody></tbody></table>";
+                document.getElementById('table').innerHTML = "<table class = 'table table-bordered table-hover table-striped' id = 'dataTable'><thead><tr> <th hidden> id </th><th>Name</th> <th> Surname </th><th>Action</th></tr></thead ><tbody></tbody></table>";
                 var tableData;
                 for (var i = 0; i < data.length; i++)
                 {
-                    tableData = "<tr><td hidden>" + data[i].id + "</td><td>" + data[i].name + "</td><td>" + data[i].amount + "</td><td><a onclick='edit(" + (i + 1) + ")' class='glyphicon glyphicon-edit'></a> | <a onclick='recordDelete(" + data[i].id + ")' class='glyphicon glyphicon-remove-circle'></a></td></tr>";
+                    tableData = "<tr><td hidden>" + data[i].id + "</td><td>" + data[i].name + "</td><td>" + data[i].surname + "</td><td><a onclick='edit(" + (i + 1) + ")' class='glyphicon glyphicon-edit'></a> | <a onclick='recordDelete(" + data[i].id + ")' class='glyphicon glyphicon-remove-circle'></a></td></tr>";
                     $('#dataTable').append(tableData);
                 }
             }
