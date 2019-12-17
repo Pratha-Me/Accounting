@@ -53,8 +53,8 @@ public class LoginController {
 		Map map = new HashMap();
 		try {
 
-			String sql = "SELECT USER_CODE AS userCode, CAST(AES_DECRYPT(LOGIN_PASS,'SECRET') AS CHAR) AS dbPassword"
-					+ " FROM application_login WHERE USER_CODE ='" + loginId + "';";
+			String sql = "SELECT USER AS userCode, PASS AS dbPassword, MD5('" + password + "') AS userPass" 
+					+ " " + "FROM users WHERE USER ='" + loginId + "';";
 
 			DB db = new DB();
 			List list = db.getRecord(sql);
@@ -63,13 +63,14 @@ public class LoginController {
 				map.put("error", "Invalid login id");
 				return map;
 			}
-
+			
 			map = (Map) list.get(0);
 
 			String userCode = map.get("userCode").toString();
 			String dbPassword = map.get("dbPassword").toString();
+			String userPass = map.get("userPass").toString();
 
-			if (dbPassword.equalsIgnoreCase(password)) {
+			if (dbPassword.equalsIgnoreCase(userPass)) {
 				map = new HashMap();
 				map.put("userCode", userCode);
 				map.put("msg", "Success");
