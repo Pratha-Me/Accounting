@@ -12,9 +12,9 @@
         <meta name="author" content="NOU">
         <meta name="copyright" content="">
         <meta name="robots" content="index, follow" />
-		
+
         <title>Welcome</title>
-        
+
 		<link href="<%=path%>/Bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <script src="<%=path%>/Bootstrap/js/jquery.min.js" type="text/javascript"></script>
         <script src="<%=path%>/Bootstrap/js/jqueryToast/jquery.toast.min.js" type="text/javascript"></script>
@@ -66,41 +66,41 @@
         <div id="dropDownSelect1"></div>
 
         <script>
-             var count = 0;
-             function doLogin()
-             {
-             $('.btn').button('loading');
-             var email = document.getElementById('user').value;
-             var password = document.getElementById('password').value;
-             $.ajax({type: "GET", url: "<%=path%>/Login", contentType: "application/json; charset=utf-8", dataType: "json",
-             data: {'password': password, 'loginId' : email},
-             success: function (data)
-             {
-             $('.btn').button('reset');
-             if (data.msg) {
-             console.log(data.token);
-             window.location.assign("<%=path%>/Login/" + data.token);
-             } else {
-             messages(data.error);
-             }
-             }, 
+			var count = 0;
+			function doLogin()
+			{
+				$('.btn').button('loading');
+				var email = document.getElementById('user').value;
+				var password = document.getElementById('password').value;
+				$.ajax({type: "GET", url: "<%=path%>/Login", contentType: "application/json; charset=utf-8", dataType: "json",
+					data: {'password': password, 'loginId': email},
+					success: function (data)
+					{
+						$('.btn').button('reset');
+						if (data.msg) {
+							console.log(data.token);
+							window.location.assign("<%=path%>/Login/" + data.token);
+						} else {
+							messages(data.error);
+						}
+					},
 
-             error: function (xhr, ajaxOptions, thrownError) {
-             $('.btn').button('reset');
-             messages('internet connection error');
-             }
-             });
-             }
-             function messages(msg) {
-             $.toast({
-             heading: "Messages",
-             text: msg,
-             icon: 'info',
-             loader: true, // Change it to false to disable loader
-             loaderBg: '#FFFFFF', // To change the background,
-             position: 'mid-center'
-             });
-             }
+					error: function (xhr, ajaxOptions, thrownError) {
+						$('.btn').button('reset');
+						messages('internet connection error');
+					}
+				});
+			}
+			function messages(msg) {
+				$.toast({
+					heading: "Messages",
+					text: msg,
+					icon: 'info',
+					loader: true, // Change it to false to disable loader
+					loaderBg: '#FFFFFF', // To change the background,
+					position: 'mid-center'
+				});
+			}
         </script>
     </body>
 </html>

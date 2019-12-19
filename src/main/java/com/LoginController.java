@@ -42,7 +42,8 @@ public class LoginController {
 		session.setAttribute("token", "Bearer " + token);
 		return "redirect:../home";
 	}
-@RequestMapping(value = "/home", method = RequestMethod.GET)
+
+	@RequestMapping(value = "/home", method = RequestMethod.GET)
 	public String home() {
 		return "home";
 	}
@@ -53,7 +54,7 @@ public class LoginController {
 		Map map = new HashMap();
 		try {
 
-			String sql = "SELECT USER AS userCode, PASS AS dbPassword, MD5('" + password + "') AS userPass" 
+			String sql = "SELECT USER AS userCode, PASS AS dbPassword, MD5('" + password + "') AS userPass"
 					+ " " + "FROM users WHERE USER ='" + loginId + "';";
 
 			DB db = new DB();
@@ -63,7 +64,7 @@ public class LoginController {
 				map.put("error", "Invalid login id");
 				return map;
 			}
-			
+
 			map = (Map) list.get(0);
 
 			String userCode = map.get("userCode").toString();
