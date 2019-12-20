@@ -48,11 +48,23 @@ body,html{
   }
 }
 
+div.flexcontent{
+	display: flex !important;
+	width: 100%;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+div #navbar{
+	width: 50px !important;
+}
+
 .rvnm-navbar-box{
-    position: absolute;
+    /*position: absolute;
     left: 0px;
     top:50px;
-    width: 220px;
+    width: 220px;*/
     background: #A0AEC4;
     min-height: 50vh;
     overflow-y: hidden;
@@ -60,7 +72,9 @@ body,html{
 }
 
 .rvnm-wrapper{
-    margin-left: 220px;
+    /*margin-left: 220px;*/
+	width:70%;
+	flex-grow: 3;
 }
 
 
@@ -375,6 +389,7 @@ body,html{
 /* Dark ruby theme */
 .rvnm-navbar-box.dark-ruby{
     background: #353C48 ;
+	flex-grow: 2;
 }
 
 .rvnm-navbar-box.dark-ruby ul li{

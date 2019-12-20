@@ -45,6 +45,33 @@
 		<link href="<%=path%>/Bootstrap/css/jquery-rvnm.css" rel="stylesheet" type="text/css"/>	
         <script src="<%=path%>/Bootstrap/js/menujs.js" type="text/javascript"></script>
 		<script defer src="<%=path%>/Bootstrap/js/jquery-rvnm.js" type="text/javascript"></script>
+		<!--js run code-->
+		<script defer type="text/javascript">
+			$(function () {
+				var rvnMenu = $("#navbar").rvnm({
+					//                    mode: 'mobile',
+					//                    responsive: false,
+					//					searchable: true,
+					// This theme setting is overriden by setTheme method just below the log method
+					theme: 'dark-ruby'
+				});
+				console.log(rvnMenu);
+				//                rvnMenu.setMode('minimal');
+//				rvnMenu.setTheme('dark-lesb');
+			});
+			/*
+			 var rvn<a href="https://www.jqueryscript.net/menu/">Menu</a> = $("#navbar").rvnm();
+			 var rvnMenu = $("#navbar").rvnm({
+			 mode: 'minimal'
+			 });
+			 var rvnMenu = $("#navbar").rvnm({
+			 theme: 'dark-lesb'
+			 });
+			 var rvnMenu = $("#navbar").rvnm({
+			 searchable: true
+			 });
+			 */
+		</script>
 	</head>
 
     <header id="header">
@@ -71,65 +98,37 @@
     </header>
 
 	<body>
-		<nav id="navbar" class="">
-			<ul>
-				<li class="spliterList"> <span class="spliter"> Dashboard </span> </li>
-				<li> <a href="#"> <i class="fa fa-database"></i> Database </a>
-					<ul>
-						<li><a href="DummyInfo">DummyInfo</a></li>
-						<li> <a href="#"> suscipit mauris </a> </li>
-						<li> <a href="#"> sed placerat ipsum </a> </li>
-						<li> <a href="#"> Proin turpis </a> </li>
-					</ul>
-				</li>
-				<li> <a href="#"> <i class="fa fa-plus-square"></i> Nunc eleifend molestie velit. Morbi lobortis quam eu velit </a>
-					<ul>
-						<li> <a href="#"> semper leo </a> </li>
-						<li> <a> habitasse platea </a>
-							<ul>
-								<li> <a href="#"> dictumst </a> </li>
-								<li> <a href="#"> Vivamus facilisis </a> </li>
-								<li> <a href="#"> In hac habitasse </a>
-									<ul>
-										<li><a href="#"> platea dictumst </a></li>
-										<li><a href="#">Nunc sed lacus</a></li>
-										<li><a href="#">euismod gravida </a></li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-						<li> <a href="#"> sed placerat ipsum </a> </li>
-					</ul>
-				</li>
-				<li class=""> <a href="#"> <i class="fa fa-bullhorn"></i> bibendum dapibus </a> </li>
-			</ul>
-		</nav>
-
-		<div id="wrapper">
-			<!--js run code-->
-			<script type="text/javascript">
-			$(function () {
-				var rvnMenu = $("#navbar").rvnm({
-					//                    mode: 'mobile',
-					//                    responsive: false,
-					//					searchable: true,
-					// This theme setting is overriden by setTheme method just below the log method
-					theme: 'dark-lesb'
-				});
-				console.log(rvnMenu);
-				//                rvnMenu.setMode('minimal');
-				rvnMenu.setTheme('dark-ruby');
-			});
-			/*
-			 var rvn<a href="https://www.jqueryscript.net/menu/">Menu</a> = $("#navbar").rvnm();
-			 var rvnMenu = $("#navbar").rvnm({
-			 mode: 'minimal'
-			 });
-			 var rvnMenu = $("#navbar").rvnm({
-			 theme: 'dark-lesb'
-			 });
-			 var rvnMenu = $("#navbar").rvnm({
-			 searchable: true
-			 });
-			 */
-			</script>
+		<div class="flexcontent">
+			<div id="navbar" class="">
+				<ul>
+					<li class="spliterList"> <span class="spliter"> Dashboard </span> </li>
+					<li> <a href="#"> <i class="fa fa-database"></i> Database </a>
+						<ul>
+							<li><a href="DummyInfo">DummyInfo</a></li>
+							<li> <a href="#"> suscipit mauris </a> </li>
+							<li> <a href="#"> sed placerat ipsum </a> </li>
+							<li> <a href="#"> Proin turpis </a> </li>
+						</ul>
+					</li>
+					<li> <a href="#"> <i class="fa fa-plus-square"></i> Nunc eleifend molestie velit. Morbi lobortis quam eu velit </a>
+						<ul>
+							<li> <a href="#"> semper leo </a> </li>
+							<li> <a> habitasse platea </a>
+								<ul>
+									<li> <a href="#"> dictumst </a> </li>
+									<li> <a href="#"> Vivamus facilisis </a> </li>
+									<li> <a href="#"> In hac habitasse </a>
+										<ul>
+											<li><a href="#"> platea dictumst </a></li>
+											<li><a href="#">Nunc sed lacus</a></li>
+											<li><a href="#">euismod gravida </a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li> <a href="#"> sed placerat ipsum </a> </li>
+						</ul>
+					</li>
+					<li class=""> <a href="#"> <i class="fa fa-bullhorn"></i> bibendum dapibus </a> </li>
+				</ul>
+			</div>

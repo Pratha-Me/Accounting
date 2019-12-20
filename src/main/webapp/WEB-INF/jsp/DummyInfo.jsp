@@ -6,36 +6,40 @@
 
 <%@include file="login/header.jsp" %>
 
-<fieldset>  <legend>ADD INFO</legend> 
-    <form method='POST' id='dataFrom'> 
-        <div class="row">
-            <div class='col-lg-2 col-sm-2 col-md-2 col-xs-6' hidden>
-                <label>id</label>
-                <input type='text' name='id' id='id' class='form-control'/>
-            </div>
-            <div class='col-lg-2 col-sm-2 col-md-2 col-xs-6'>
-                <label>name</label>
-                <input type='text' name='name' id='name' class='form-control'/>
-            </div>
-            <div class='col-lg-2 col-sm-2 col-md-2 col-xs-6'>
-                <label>surname</label>
-                <input type='text' name='surname' id='surname' class='form-control'/>
-            </div>
+<div id="wrapper">
+	<fieldset>  <legend>ADD INFO</legend> 
+		<form method='POST' id='dataFrom'> 
+			<div class="row">
+				<div class='col-lg-2 col-sm-2 col-md-2 col-xs-6' hidden>
+					<label>id</label>
+					<input type='text' name='id' id='id' class='form-control'/>
+				</div>
+				<div class='col-lg-2 col-sm-2 col-md-2 col-xs-6'>
+					<label>name</label>
+					<input type='text' name='name' id='name' class='form-control'/>
+				</div>
+				<div class='col-lg-2 col-sm-2 col-md-2 col-xs-6'>
+					<label>surname</label>
+					<input type='text' name='surname' id='surname' class='form-control'/>
+				</div>
 
-            <div class='col-lg-2 col-sm-2 col-md-2 col-xs-6'>
-                <label id='ActionMSG'>&nbsp;</label><br>
-                <input type='button' onclick='doSave()' id='Save' value='Save' class='btn btn-success'/>
-                <input type='button' onclick='doUpdate()'  id='Update' value='Update' class='btn btn-success' style='display: none'/>
+				<div class='col-lg-2 col-sm-2 col-md-2 col-xs-6'>
+					<label id='ActionMSG'>&nbsp;</label><br>
+					<input type='button' onclick='doSave()' id='Save' value='Save' class='btn btn-success'/>
+					<input type='button' onclick='doUpdate()'  id='Update' value='Update' class='btn btn-success' style='display: none'/>
+				</div>
 			</div>
-        </div>
 
-    </form>
-</fieldset> 
-<br> <fieldset>  <legend>Details</legend> 
-    <div class='row' id='table' ></div>
-</fieldset>
+		</form>
+	</fieldset> 
+	<br> <fieldset>  <legend>Details</legend> 
+		<div class='row' id='table' ></div>
+	</fieldset>
 
-</div>
+</div>  <!-- This is the end tag for the wrapper division in header -->
+</div> <!-- This is the end tag for the main division in header -->
+
+<%@include file="login/footer.jsp" %>
 
 <script>
 
@@ -126,5 +130,4 @@
 	getRecord();
 
 </script>
-<%@include file="login/footer.jsp" %>
 </body>
