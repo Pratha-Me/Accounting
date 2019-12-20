@@ -59,7 +59,8 @@
                 </div>
                 <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
                     <div class="user-detail text-right" style="text-align: right;">
-                        <p style="margin-top: -10px;">User Name  <span><%= ""%> </span> | <span><a href="<%= path%>/Utility/Backup">Backup</a> </span> </p>
+                        <p style="margin-top: -10px;">User Name  <span><%= ""%> </span> | 
+							<span><a href="<%= path%>/Utility/Backup">Backup</a> </span> </p>
                         <p style="margin-top: -10px;"><span><a href="<%= path%>/ChangePassword">Change Password</a></span> 
                             |  <span><a href="<%= path%>/Logout">Log Out</a></span></p>
                     </div>
@@ -69,97 +70,50 @@
         </div>
     </header>
 
-	<!--
-		<nav style="margin-top: 5px;" class="navbar"> 
-			<div class="container">
-				<ul id="myTab-1" role="tablist" class="nav nav-tabs portfolioFilter">
-					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Setup  
-							<span class="caret"></span></a>            
-						<ul class="dropdown-menu" > 
-							<li><a href="DummyInfo">DummyInfo</a></li>
-						</ul>
-					</li>
-	
-				</ul>
-			</div>
+	<body>
+		<nav id="navbar" class="">
+			<ul>
+				<li class="spliterList"> <span class="spliter"> Dashboard </span> </li>
+				<li> <a href="#"> <i class="fa fa-database"></i> Database </a>
+					<ul>
+						<li><a href="DummyInfo">DummyInfo</a></li>
+						<li> <a href="#"> suscipit mauris </a> </li>
+						<li> <a href="#"> sed placerat ipsum </a> </li>
+						<li> <a href="#"> Proin turpis </a> </li>
+					</ul>
+				</li>
+				<li> <a href="#"> <i class="fa fa-plus-square"></i> Nunc eleifend molestie velit. Morbi lobortis quam eu velit </a>
+					<ul>
+						<li> <a href="#"> semper leo </a> </li>
+						<li> <a> habitasse platea </a>
+							<ul>
+								<li> <a href="#"> dictumst </a> </li>
+								<li> <a href="#"> Vivamus facilisis </a> </li>
+								<li> <a href="#"> In hac habitasse </a>
+									<ul>
+										<li><a href="#"> platea dictumst </a></li>
+										<li><a href="#">Nunc sed lacus</a></li>
+										<li><a href="#">euismod gravida </a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li> <a href="#"> sed placerat ipsum </a> </li>
+					</ul>
+				</li>
+				<li class=""> <a href="#"> <i class="fa fa-bullhorn"></i> bibendum dapibus </a> </li>
+			</ul>
 		</nav>
-	-->
 
-<body>
-	<nav id="navbar" class="">
-		<ul>
-			<li> <span class="spliter"> <i class="fa fa-cart-plus"></i> Aliquam dictum </span> </li>
-			<li> <a href="#"> <i class="fa fa-bell-o"></i> eleifend risus </a>
-				<ul>
-					<li><a href="DummyInfo">DummyInfo</a></li>
-					<li> <a href="#"> suscipit mauris </a> </li>
-					<li> <a href="#"> sed placerat ipsum </a> </li>
-					<li> <a href="#"> Proin turpis </a> </li>
-				</ul>
-			</li>
-			<li> <a href="#"> <i class="fa fa-plus-square"></i> Nunc eleifend molestie velit. Morbi lobortis quam eu velit </a>
-				<ul>
-					<li> <a href="#"> semper leo </a> </li>
-					<li> <a> habitasse platea </a>
-						<ul>
-							<li> <a href="#"> dictumst </a> </li>
-							<li> <a href="#"> Vivamus facilisis </a> </li>
-							<li> <a href="#"> In hac habitasse </a>
-								<ul>
-									<li><a href="#"> platea dictumst </a></li>
-									<li><a href="#">Nunc sed lacus</a></li>
-									<li><a href="#">euismod gravida </a></li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-					<li> <a href="#"> sed placerat ipsum </a> </li>
-				</ul>
-			</li>
-			<li class=""> <a href="#"> <i class="fa fa-bullhorn"></i> bibendum dapibus </a> </li>
-			<li> <a href="#"> <i class="fa fa-building"></i> Proin nonummy </a> </li>
-			<li> <span class="spliter"> <i class="fa fa-bars"></i> Nullam non diam </span> </li>
-			<li> <a href="#"> <i class="fa fa-align-center"></i> platea dictumst </a>
-				<ul>
-					<li> <a href="#"> lacus at augue </a> </li>
-					<li> <a href="#"> pede felis </a> </li>
-					<li> <a href="#"> dignissim leo </a> </li>
-				</ul>
-			</li>
-			<!--
-   			<li> <a href="#"> <i class="fa fa-amazon"></i> second </a> </li>
-			<li> <a href="#"> <i class="fa fa-apple"></i> third </a> </li>
-			<li> <span class="spliter"> <i class="fa fa-desktop"></i> splliter teest </span> </li>
-			<li> <a href="#"> <i class="fa fa-expand"></i> quis lectus </a>
-				<ul>
-					<li> <a href="#"> Nunc sed lacus </a> </li>
-					<li> <a href="#"> Pellentesque </a> </li>
-					<li> <a href="#"> malesuada nulla </a> </li>
-				</ul>
-			</li>
-			<li> <a href="#"> <i class="fa fa-address-book"></i> ipsum urna sed risus </a> </li>
-			<li> <span class="spliter"> <i class="fa fa-cut"></i> Maecenas fermentum </span> </li>
-			<li> <a href="#"> <i class="fa fa-yoast"></i> sunt in culpa </a>
-				<ul>
-					<li> <a href="#"> officia deserunt </a> </li>
-					<li> <a href="#"> mollit anim id </a> </li>
-					<li> <a href="#"> id est laborum </a> </li>
-				</ul>
-			</li>
-			<li> <a href="#"> <i class="fa fa-bank"></i> Aenean magna nisl </a> </li>
-			-->
-		</ul>
-	</nav>
-
-	<div id="wrapper">
-	<!--js run code-->
-	<script type="text/javascript">
+		<div id="wrapper">
+			<!--js run code-->
+			<script type="text/javascript">
 			$(function () {
 				var rvnMenu = $("#navbar").rvnm({
 					//                    mode: 'mobile',
 					//                    responsive: false,
-//					searchable: true,
+					//					searchable: true,
+					// This theme setting is overriden by setTheme method just below the log method
 					theme: 'dark-lesb'
 				});
 				console.log(rvnMenu);
@@ -178,4 +132,4 @@
 			 searchable: true
 			 });
 			 */
-	</script>
+			</script>

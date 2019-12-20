@@ -142,12 +142,12 @@ body,html{
 
 .rvnm-navbar-box ul li span.spliter{
     display: block;
-    padding: 10px;
+    padding: 0px;
     font-size: 14px;
     font-weight: 600;
     background: #eaeaea ;
     color: #1d4686;
-    /*text-align: center;*/
+    text-align: center;
 }
 
 .rvnm-navbar-box li .fa{
@@ -390,7 +390,7 @@ body,html{
     background-color: #f0544c;
 }
 .rvnm-navbar-box.dark-ruby ul li a,.rvnm-navbar-box.dark-ruby ul li a:visited,.rvnm-navbar-box.dark-ruby ul li span.spliter{
-    background: transparent  ;
+    background: transparent;
     color: rgb(150, 162, 180);
     padding-top: 15px ;
     padding-bottom: 15px;
@@ -401,6 +401,10 @@ body,html{
   font-weight: bold;	
   color: whitesmoke;
     /*opacity: .40;*/
+}
+
+.rvnm-navbar-box.dark-ruby ul li.spliterList:hover{
+	background-color: transparent !important;
 }
 
 .rvnm-navbar-box.dark-ruby ul li span.spliter:hover{

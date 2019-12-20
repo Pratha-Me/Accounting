@@ -61,7 +61,8 @@ img{
 	max-width: 100%;
 }
 #header{
-	background: #303f9f;
+	background: #353C48;
+	/*background: #303f9f;*/
 /*        position: fixed;
         left: 0;
         top: 0;
@@ -169,10 +170,10 @@ h2.form-signin-heading{
  	padding-top: 10px;
  }
  .user-detail p{
- 	color: #fff;
+ 	color: white;
  }
  .user-detail p span, .user-detail p span a{
- 	color: #f89800;
+ 	color: white;
  }
  /*Nav Bar*/
   .page-container .dropdown-menu{
