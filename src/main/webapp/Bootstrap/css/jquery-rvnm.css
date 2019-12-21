@@ -29,35 +29,42 @@ body,html{
 
 /* ripple */
 .rvnm-ripple {
-  width: 0;
-  height: 0;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, 0.4);
-  transform: scale(0);
-  position: absolute;
-  opacity: 1;
+	width: 0;
+	height: 0;
+	border-radius: 50%;
+	background: rgba(0, 0, 0, 0.4);
+	transform: scale(0);
+	position: absolute;
+	opacity: 1;
 }
 .rvnm-rippleEffect {
     animation: rvnm-rippleDrop .6s linear;
 }
 
 @keyframes rvnm-rippleDrop {
-  100% {
-    transform: scale(2);
-    opacity: 0;
-  }
+	100% {
+		transform: scale(2);
+		opacity: 0;
+	}
+}
+
+div.bodydiv{
+	background-color: #2d2d2d;
 }
 
 div.flexcontent{
 	display: flex !important;
 	width: 100%;
 	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
+	justify-content: flex-start;
+	align-items: flex-start;
+	min-height: 100%;
 }
 
 div #navbar{
-	width: 50px !important;
+	width: 20% !important;
+	border-top: 1px solid whitesmoke;
+	border-top-right-radius: 15px;
 }
 
 .rvnm-navbar-box{
@@ -66,15 +73,14 @@ div #navbar{
     top:50px;
     width: 220px;*/
     background: #A0AEC4;
-    min-height: 50vh;
     overflow-y: hidden;
     z-index: 99;
 }
 
 .rvnm-wrapper{
     /*margin-left: 220px;*/
-	width:70%;
-	flex-grow: 3;
+	width:80%;
+	padding: 50px 20px;
 }
 
 
@@ -323,7 +329,8 @@ div #navbar{
 }
 
 .rvnm-navbar-box.dark ul li span.spliter{
-    opacity: .60;
+    /*opacity: .60;*/
+	color: whitesmoke;
 }
 
 .rvnm-navbar-box.dark ul li:hover a,.rvnm-navbar-box.dark ul li:hover a:visited{
@@ -342,10 +349,10 @@ div #navbar{
     background-repeat: no-repeat;
     background-position: 95% 15px;
 }
- /*Dark theme minimal*/
- .rvnm-navbar-box.rvnm-minimal.dark .rvnm-minimal-expand{
-     height: 46px;
- }
+/*Dark theme minimal*/
+.rvnm-navbar-box.rvnm-minimal.dark .rvnm-minimal-expand{
+	height: 46px;
+}
 .rvnm-navbar-box.rvnm-minimal.dark .rvnm-minimal-expand > a,.rvnm-navbar-box.rvnm-minimal .rvnm-minimal-expand > .spliter{
     background: rgba(0,0,0,0.2) ;
 }
@@ -389,7 +396,6 @@ div #navbar{
 /* Dark ruby theme */
 .rvnm-navbar-box.dark-ruby{
     background: #353C48 ;
-	flex-grow: 2;
 }
 
 .rvnm-navbar-box.dark-ruby ul li{
@@ -413,12 +419,16 @@ div #navbar{
 }
 
 .rvnm-navbar-box.dark-ruby ul li span.spliter{
-  font-weight: bold;	
-  color: whitesmoke;
+	font-weight: bold;	
+	color: whitesmoke;
     /*opacity: .40;*/
 }
 
 .rvnm-navbar-box.dark-ruby ul li.spliterList:hover{
+	background-color: transparent !important;
+}
+
+.rvnm-navbar-box.dark ul li.spliterList:hover{
 	background-color: transparent !important;
 }
 
@@ -442,10 +452,10 @@ div #navbar{
     background-repeat: no-repeat;
     background-position: 95% 15px;
 }
- /*Dark ruby theme minimal*/
- .rvnm-navbar-box.rvnm-minimal.dark-ruby .rvnm-minimal-expand{
-     height: 46px;
- }
+/*Dark ruby theme minimal*/
+.rvnm-navbar-box.rvnm-minimal.dark-ruby .rvnm-minimal-expand{
+	height: 46px;
+}
 
 .rvnm-navbar-box.rvnm-minimal.dark-ruby ul li:hover,.rvnm-navbar-box.rvnm-minimal ul li.rvnm-collapseable{
     background-color: #f0544c ;
@@ -530,10 +540,10 @@ div #navbar{
     background-repeat: no-repeat;
     background-position: 95% 15px;
 }
- /*Dark beryl theme minimal*/
- .rvnm-navbar-box.rvnm-minimal.dark-beryl .rvnm-minimal-expand{
-     height: 46px;
- }
+/*Dark beryl theme minimal*/
+.rvnm-navbar-box.rvnm-minimal.dark-beryl .rvnm-minimal-expand{
+	height: 46px;
+}
 
 .rvnm-navbar-box.rvnm-minimal.dark-beryl ul li:hover,.rvnm-navbar-box.rvnm-minimal ul li.rvnm-collapseable{
     background-color: #0fd1ab ;
@@ -619,10 +629,10 @@ div #navbar{
     background-repeat: no-repeat;
     background-position: 95% 15px;
 }
- /*Dark doder theme minimal*/
- .rvnm-navbar-box.rvnm-minimal.dark-doder .rvnm-minimal-expand{
-     height: 46px;
- }
+/*Dark doder theme minimal*/
+.rvnm-navbar-box.rvnm-minimal.dark-doder .rvnm-minimal-expand{
+	height: 46px;
+}
 
 .rvnm-navbar-box.rvnm-minimal.dark-doder ul li:hover,.rvnm-navbar-box.rvnm-minimal ul li.rvnm-collapseable{
     background-color: #4285f4 ;
@@ -709,10 +719,10 @@ div #navbar{
     background-repeat: no-repeat;
     background-position: 95% 15px;
 }
- /*Dark lesb theme minimal*/
- .rvnm-navbar-box.rvnm-minimal.dark-lesb .rvnm-minimal-expand{
-     height: 46px;
- }
+/*Dark lesb theme minimal*/
+.rvnm-navbar-box.rvnm-minimal.dark-lesb .rvnm-minimal-expand{
+	height: 46px;
+}
 
 .rvnm-navbar-box.rvnm-minimal.dark-lesb ul li:hover,.rvnm-navbar-box.rvnm-minimal ul li.rvnm-collapseable{
     background-color: #f442b3 ;

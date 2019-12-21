@@ -1,5 +1,10 @@
+<!--
 <br><br><br><br>
 
+</div>
+-->
+
+</div>
 </div>
 <script>  function messages(msg) {
          $.toast({
@@ -94,5 +99,8 @@
 </div>
 </div>
 </footer> 
+
+<!--
 </body>
 </html>
+-->

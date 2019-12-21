@@ -53,7 +53,9 @@
 					//                    responsive: false,
 					//					searchable: true,
 					// This theme setting is overriden by setTheme method just below the log method
-					theme: 'dark-ruby'
+//					theme: 'dark-beryl'
+//					theme: 'dark-doder'
+					theme: 'dark'
 				});
 				console.log(rvnMenu);
 				//                rvnMenu.setMode('minimal');
@@ -97,7 +99,7 @@
         </div>
     </header>
 
-	<body>
+	<div class="bodydiv">
 		<div class="flexcontent">
 			<div id="navbar" class="">
 				<ul>
@@ -132,3 +134,4 @@
 					<li class=""> <a href="#"> <i class="fa fa-bullhorn"></i> bibendum dapibus </a> </li>
 				</ul>
 			</div>
+			<div id="wrapper">

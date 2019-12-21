@@ -13,38 +13,38 @@ form[role=login] {
 	padding: 50px;
 	border-radius: 10px;
 }
-	form[role=login] > section {
-		max-width: 278px;
-		margin: 0 auto;
-	}
-	form[role=login] > section div {
-		margin: 30px 0 0 0;
-	}
-	form[role=login] > section a {
-		display: block;
-		margin: 15px 0 30px 0;
-		color: #0251c7;
-	}
-	form[role=login] input[type=text],
-	form[role=login] input[type=password] {
-		font-size: 15px;
-		border: none;
-		background: #e5e4e4;
-		box-shadow: none;
-	}
-	form[role=login] > section button.btn-success {
-		font-size: 17px;
-		background: #14a016;
-	}
-	
+form[role=login] > section {
+	max-width: 278px;
+	margin: 0 auto;
+}
+form[role=login] > section div {
+	margin: 30px 0 0 0;
+}
+form[role=login] > section a {
+	display: block;
+	margin: 15px 0 30px 0;
+	color: #0251c7;
+}
+form[role=login] input[type=text],
+form[role=login] input[type=password] {
+	font-size: 15px;
+	border: none;
+	background: #e5e4e4;
+	box-shadow: none;
+}
+form[role=login] > section button.btn-success {
+	font-size: 17px;
+	background: #14a016;
+}
+
 .signup {
 	font-size: 15px;
 	text-align: center;
 	margin: 2em 0;
 }
-	.signup a {
-		color: #fff;	
-	}
+.signup a {
+	color: #fff;	
+}
 body{
 	font-family: 'Open Sans', sans-serif;
 }
@@ -61,12 +61,12 @@ img{
 	max-width: 100%;
 }
 #header{
-	background: #353C48;
+	background: #003b59;
 	/*background: #303f9f;*/
-/*        position: fixed;
-        left: 0;
-        top: 0;
-         width: 100%;*/
+	/*        position: fixed;
+			left: 0;
+			top: 0;
+			 width: 100%;*/
 }
 
 
@@ -140,14 +140,14 @@ h2.form-signin-heading{
 
 /*Footer Section*/
 #footer{
-    background: #303f9f;
+	position: relative;
+	bottom: 0;
+    background: #003b59;
     color: #fff;
     padding: 25px 0;
-    position: fixed;
     left: 0;
-    bottom: 0;
     width: 100%;
-        height: 50px;
+	height: 60px;
     padding-top: 0;
 }
 /*#footer p{
@@ -165,22 +165,22 @@ h2.form-signin-heading{
 	color: #303f9f;
 }*/
 
- /*Top User Details */
- .user-detail{
- 	padding-top: 10px;
- }
- .user-detail p{
- 	color: white;
- }
- .user-detail p span, .user-detail p span a{
- 	color: white;
- }
- /*Nav Bar*/
-  .page-container .dropdown-menu{
-  	top: 147px;
+/*Top User Details */
+.user-detail{
+	padding-top: 10px;
+}
+.user-detail p{
+	color: white;
+}
+.user-detail p span, .user-detail p span a{
+	color: white;
+}
+/*Nav Bar*/
+.page-container .dropdown-menu{
+	top: 147px;
 	margin-top: 20px;
-  }
- .wrapper #content-container {
+}
+.wrapper #content-container {
     margin-top: 20px;
 }
 .filter_section .heading-section h3, #blog .heading-section h3 {
@@ -197,7 +197,7 @@ h2.form-signin-heading{
 }
 .isotope,
 .isotope .isotope-item {
-  /* change duration value to whatever you like */
+	/* change duration value to whatever you like */
 
     -webkit-transition-duration: 0.8s;
     -moz-transition-duration: 0.8s;
@@ -224,7 +224,7 @@ h2.form-signin-heading{
 }*/
 .stunning-luxury .portfolioFilter {
     margin: 0 auto 40px;
-   /* width: 84%;*/
+	/* width: 84%;*/
 }
 .portfolioFilter > li:first-child{
 	margin-left: 0;
@@ -301,7 +301,7 @@ legend{
 	padding:0 15px;
 	border: none;
 	width: auto;
-        font-weight: bold;
+	font-weight: bold;
 	margin: 0;
 	font-family: Arial;
 	color: #000;
@@ -371,7 +371,7 @@ tr{
 th{
 	padding-bottom: 10px;
 	font-weight: bold;
-        font-size: small;
+	font-size: small;
 	text-align: left;
 }
 td{
@@ -388,7 +388,7 @@ td{
 label{
 	font-weight: bold;
 	line-height: 34px;
-        font-size: 12px;
+	font-size: 12px;
 }
 .choose-year.choose-month input{
 	width: 57% !important;
@@ -425,14 +425,14 @@ label{
 }
 table{
 	width: 98% !important;
-        margin: 1% !important;
-        
+	margin: 1% !important;
+
 }
 .form-group.sectio-two.new-add{
 	display: inline-block;
 }
 .form-group.sectio-two.new-add > label {
-/*    width: 48%;*/
+	/*    width: 48%;*/
 }
 .form-group.sectio-two.new-add label {
     width: 30%;
@@ -501,20 +501,20 @@ table{
 	margin-left: 5px;
 }
 .n-student .date-section .form-control{
-/*	width: 51%;*/
-width: 60%;
+	/*	width: 51%;*/
+	width: 60%;
 	margin-right: 2px;
 }
 .n-student .date-section label{
-/*width: 31%;*/
-width: 36%;
+	/*width: 31%;*/
+	width: 36%;
 }
 .n-student .date-section1 label{
 	width: 22%;
 }
 .n-student .date-section1 .form-control{
-/*	width: 68%;*/
-width: 60%;
+	/*	width: 68%;*/
+	width: 60%;
 }
 .upload-section{
 	display: inline-block !important;
@@ -534,7 +534,7 @@ option{
 select{
 	float: left;
     height: 30px;
-   line-height: 34px;
+	line-height: 34px;
     padding-left: 10px;
     margin-right: 10px;
 }
@@ -584,7 +584,7 @@ select{
 }
 .form-control, .input-group-addon{
 	border-radius: 0;
-      height: 28px;
+	height: 28px;
     font-size: 12px;
 }
 .add-new-staff{
@@ -603,13 +603,13 @@ select{
 
 @media (max-device-width: 480px){
 
- 
-   .input-icon:after{
+
+	.input-icon:after{
 		top: 28%;
 		transform: translate(0, -50%);
 	}
 	.input-icon{
-	    padding: 8px 7px;
+		padding: 8px 7px;
 	}
 	.input-icon i{
 		width: 20px;
@@ -619,51 +619,51 @@ select{
 		padding-top: 4px;
 	}
 	.checkbox input[type="checkbox"]{
-		
+
 		margin-top: -2px;
 	}
-	
+
 	.portfolioFilter > li{
 		margin-bottom:5px;
 		margin-left:1px;
-		}
-		.portfolioFilter > li a{
+	}
+	.portfolioFilter > li a{
 		border-bottom: 1px solid #f89800;
 		font-size:12px;
 		padding:0px 6px;
-		}
- }
-  @media (max-device-width: 320px){
- .portfolioFilter > li {
-    width: 100%;
+	}
 }
+@media (max-device-width: 320px){
+	.portfolioFilter > li {
+		width: 100%;
+	}
 }
 
- @media (max-device-width: 991px){
+@media (max-device-width: 991px){
 	.navbar-mind .nav a{
 		padding: 0 25px !important;
 	}
- }
- @media (max-device-width: 767px)
- {
- 	.logo h1 a img{
- 		text-align:  center;
- 		margin: 0 auto;
- 	}
- 	.user-detail{
- 		text-align:  center;
- 	}
- 	.user-detail p{
- 		margin-left:  25px;
- 		text-align:  center;
- 	}
+}
+@media (max-device-width: 767px)
+{
+	.logo h1 a img{
+		text-align:  center;
+		margin: 0 auto;
+	}
+	.user-detail{
+		text-align:  center;
+	}
+	.user-detail p{
+		margin-left:  25px;
+		text-align:  center;
+	}
 	.navbar-mind .nav li{
 		border: none !important;
 	}
 	.input-icon::after{
 		top: 75% !important;
 	}
- }
+}
 
 
 
@@ -848,14 +848,14 @@ select{
 .print-mark.add-exam-type .form-group label{
 	width: 35%;
 }
-	
 
-	.btn-file {
-  position: relative;
-  overflow: hidden;
+
+.btn-file {
+	position: relative;
+	overflow: hidden;
 }
 .btn-file input[type=file] {
-  opacity: 0;
+	opacity: 0;
     position: absolute;
     right: 0;
     text-align: right;
@@ -863,8 +863,8 @@ select{
 	height: 100%;
 }
 input[readonly] {
-  background-color: white !important;
-  cursor: text !important;
+	background-color: white !important;
+	cursor: text !important;
 }
 .mange-report .form-group span.input-group-btn{
 	width: 29%;	
@@ -1368,7 +1368,7 @@ th, td {
 	width: 31%;
 }
 .print-mark .form-group.new-add-col1 button{
-	
+
 }
 .student-list-col{
 	margin-top: 25px;
@@ -1511,7 +1511,7 @@ tbody.staff-table1 tr td:last-child{
 }
 .holiday-checkbox label span{
 	margin-right: 5px;
-        font-size: 12px;
+	font-size: 12px;
 }
 .form-group > p {
     line-height: 32px;
@@ -1566,6 +1566,6 @@ tbody.staff-table1 tr td:last-child{
     margin-top: 45px;
 }
 .new-add select{
-   
+
 }
 
