@@ -88,10 +88,12 @@
                 </div>
                 <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
                     <div class="user-detail text-right" style="text-align: right;">
-                        <p style="margin-top: -10px;">User Name  <span><%= ""%> </span> | 
+						<p style="margin-top: 5px;margin-bottom: 10px;">User Name  <span> </span> | 
 							<span><a href="<%= path%>/Utility/Backup">Backup</a> </span> </p>
-                        <p style="margin-top: -10px;"><span><a href="<%= path%>/ChangePassword">Change Password</a></span> 
-                            |  <span><a href="<%= path%>/Logout">Log Out</a></span></p>
+                        <p style="margin-top: -10px; margin-bottom: 10px;"><span><a 
+									href="<%= path%>/ChangePassword">Change Password</a></span> |  
+									<span><a href="<%= path%>/Logout">Log Out</a></span></p>
+
                     </div>
                 </div>
 

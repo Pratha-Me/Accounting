@@ -93,7 +93,6 @@
 <div class="container">
 <div class="row">
 <div class="col-xs-12 col-sm-12 col-md-12">
-<p>&nbsp;</p>
 <p>Copy Right &copy; 2014-2018 </p>
 </div>
 </div>
