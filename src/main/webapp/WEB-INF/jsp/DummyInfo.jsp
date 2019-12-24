@@ -7,7 +7,7 @@
 <%@include file="login/header.jsp" %>
 
 <link rel="stylesheet" type="text/css" href="<%=path%>/Bootstrap/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="<%=path%>/Bootstrap/fonts/iconic/css/material-design-iconic-font.min.css">
+<!--<link rel="stylesheet" type="text/css" href="<%=path%>/Bootstrap/fonts/iconic/css/material-design-iconic-font.min.css">-->
 <link rel="stylesheet" type="text/css" href="<%=path%>/Bootstrap/css/util_table.css">
 <link rel="stylesheet" type="text/css" href="<%=path%>/Bootstrap/css/main_table.css">
 
@@ -29,7 +29,9 @@
 -->
 
 <div class="row" style="display:flex; align-content: flex-start; justify-content: center;">
-	<div class = "col-lg-10">
+	<div class = "col-lg-10" style="box-shadow: 0 0 1px rgba(0,0,0,.125),0 1px 3px rgba(0,0,0,.2); 
+		 border: 0 solid rgba(0,0,0,.125);
+		 border-radius: .25rem;">
 		<fieldset>  <legend>ADD INFO</legend> 
 			<form method='POST' id='dataFrom'> 
 				<div class="row">
@@ -54,7 +56,8 @@
 				</div>
 			</form>
 		</fieldset> 
-		<br>
+		<br></br>
+		
 		<fieldset>  <legend>Details</legend> 
 			<div class='row' id='table' ></div>
 		</fieldset>
