@@ -1,48 +1,56 @@
-<!--
-<br><br><br><br>
+<footer class="main-footer">
+	<strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
+	All rights reserved.
+	<div class="float-right d-none d-sm-inline-block">
+		<b>Version</b> 3.0.1
+	</div>
+</footer>
 
+<!-- Control Sidebar -->
+<aside class="control-sidebar control-sidebar-dark">
+	<!-- Control sidebar content goes here -->
+</aside>
+<!-- /.control-sidebar -->
 </div>
--->
+<!-- ./wrapper -->
 
-</div>
-</div>
 <script>  function messages(msg) {
-         $.toast({
-                    heading: "Messages",
-                    text: msg,
-                    icon: 'info',
-                    loader: true, // Change it to false to disable loader
-                    loaderBg: '#FFFFFF', // To change the background,
-                    position: 'mid-center'
-                });
- }
- 
-  function errorMessages(msg) {
-         $.toast({
-                    heading: "Messages",
-                    text: msg,
-                    icon: 'error',
-                    loader: true, // Change it to false to disable loader
-                    loaderBg: '#FF0000', // To change the background,
-                    position: 'mid-center'
-                });
- }
- function excelExport(tableId)
-        {
-            $(".print").hide();
-            var htmltable = document.getElementById(tableId);
-            var html = htmltable.outerHTML;
-            window.open('data:application/vnd.ms-excel,' + encodeURIComponent(html));
-            $(".print").show();
-        }
-       
-                function printDiv(div) {
-                    $('.print').hide();
-                    let printContents, popupWin;
-                    printContents = document.getElementById(div).innerHTML;
-                    popupWin = window.open('', '_blank', 'top=0,left=0,height=100%,width=auto');
-                    popupWin.document.open();
-                    popupWin.document.write(`
+		$.toast({
+			heading: "Messages",
+			text: msg,
+			icon: 'info',
+			loader: true, // Change it to false to disable loader
+			loaderBg: '#FFFFFF', // To change the background,
+			position: 'mid-center'
+		});
+	}
+
+	function errorMessages(msg) {
+		$.toast({
+			heading: "Messages",
+			text: msg,
+			icon: 'error',
+			loader: true, // Change it to false to disable loader
+			loaderBg: '#FF0000', // To change the background,
+			position: 'mid-center'
+		});
+	}
+	function excelExport(tableId)
+	{
+		$(".print").hide();
+		var htmltable = document.getElementById(tableId);
+		var html = htmltable.outerHTML;
+		window.open('data:application/vnd.ms-excel,' + encodeURIComponent(html));
+		$(".print").show();
+	}
+
+	function printDiv(div) {
+		$('.print').hide();
+		let printContents, popupWin;
+		printContents = document.getElementById(div).innerHTML;
+		popupWin = window.open('', '_blank', 'top=0,left=0,height=100%,width=auto');
+		popupWin.document.open();
+		popupWin.document.write(`
             <html>
               <head>
                 <title> <%=""%></title>
@@ -83,23 +91,11 @@
         
           <body onload="window.print();window.close()">` + printContents + `</body>
             </html>`
-                            );
-                      $('.print').show();
-                    popupWin.document.close();
-                }
+				);
+		$('.print').show();
+		popupWin.document.close();
+	}
 
-   </script>  
-<footer id="footer" >
-<div class="container">
-<div class="row">
-<div class="col-xs-12 col-sm-12 col-md-12">
-<p>Copy Right &copy; 2014-2018 </p>
-</div>
-</div>
-</div>
-</footer> 
-
-<!--
+</script>  
 </body>
 </html>
--->

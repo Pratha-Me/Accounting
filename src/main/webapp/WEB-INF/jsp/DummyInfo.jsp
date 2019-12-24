@@ -12,7 +12,6 @@
 <link rel="stylesheet" type="text/css" href="<%=path%>/Bootstrap/css/main_table.css">
 
 <script defer src="<%=path%>/Bootstrap/js/main.js"></script>
-
 <!--
 <link rel="icon" type="image/png" href="images/icons/favicon.ico"/> @
 <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -29,94 +28,38 @@
 <script defer src="js/main.js"></script>
 -->
 
-<fieldset>  <legend>ADD INFO</legend> 
-	<form method='POST' id='dataFrom'> 
-		<div class="row">
-			<div class='col-lg-2 col-sm-2 col-md-2 col-xs-6' hidden>
-				<label>id</label>
-				<input type='text' name='id' id='id' class='form-control'/>
-			</div>
-			<div class='col-lg-2 col-sm-2 col-md-2 col-xs-6'>
-				<label>name</label>
-				<input type='text' name='name' id='name' class='form-control'/>
-			</div>
-			<div class='col-lg-2 col-sm-2 col-md-2 col-xs-6'>
-				<label>surname</label>
-				<input type='text' name='surname' id='surname' class='form-control'/>
-			</div>
+<div class="row" style="display:flex; align-content: flex-start; justify-content: center;">
+	<div class = "col-lg-10">
+		<fieldset>  <legend>ADD INFO</legend> 
+			<form method='POST' id='dataFrom'> 
+				<div class="row">
+					<div class='col-lg-2 col-sm-2 col-md-2 col-xs-6' hidden>
+						<label>id</label>
+						<input type='text' name='id' id='id' class='form-control'/>
+					</div>
+					<div class='col-lg-2 col-sm-2 col-md-2 col-xs-6'>
+						<label>name</label>
+						<input type='text' name='name' id='name' class='form-control'/>
+					</div>
+					<div class='col-lg-2 col-sm-2 col-md-2 col-xs-6'>
+						<label>surname</label>
+						<input type='text' name='surname' id='surname' class='form-control'/>
+					</div>
 
-			<div class='col-lg-2 col-sm-2 col-md-2 col-xs-6'>
-				<label id='ActionMSG'>&nbsp;</label><br>
-				<input type='button' onclick='doSave()' id='Save' value='Save' class='btn btn-success'/>
-				<input type='button' onclick='doUpdate()'  id='Update' value='Update' class='btn btn-success' style='display: none'/>
-			</div>
-		</div>
-
-	</form>
-</fieldset> 
-<br>
-<fieldset>  <legend>Details</legend> 
-	<div class='row' id='table' ></div>
-</fieldset>
-	<!--<div class="limiter">
-		<div class="wrap-table100">	
-			<div class="table100 ver1 m-b-110">
-				<div class="table100-head">
-					<table>
-						<thead>
-							<tr class="row100 head">
-								<th class="cell100 column1">Class name</th>
-								<th class="cell100 column2">Type</th>
-								<th class="cell100 column3">Hours</th>
-								<th class="cell100 column4">Trainer</th>
-								<th class="cell100 column5">Spots</th>
-							</tr>
-						</thead>
-					</table>
+					<div class='col-lg-2 col-sm-2 col-md-2 col-xs-6'>
+						<label id='ActionMSG'>&nbsp;</label><br>
+						<input type='button' onclick='doSave()' id='Save' value='Save' class='btn btn-success'/>
+						<input type='button' onclick='doUpdate()'  id='Update' value='Update' class='btn btn-success' style='display: none'/>
+					</div>
 				</div>
-
-				<div class="table100-body js-pscroll">
-					<table>
-						<tbody>
-							<tr class="row100 body">
-								<td class="cell100 column1">Like a butterfly</td>
-								<td class="cell100 column2">Boxing</td>
-								<td class="cell100 column3">9:00 AM - 11:00 AM</td>
-								<td class="cell100 column4">Aaron Chapman</td>
-								<td class="cell100 column5">10</td>
-							</tr>
-							<tr class="row100 body">
-								<td class="cell100 column1">Mind & Body</td>
-								<td class="cell100 column2">Yoga</td>
-								<td class="cell100 column3">8:00 AM - 9:00 AM</td>
-								<td class="cell100 column4">Adam Stewart</td>
-								<td class="cell100 column5">15</td>
-							</tr>
-
-							<tr class="row100 body">
-								<td class="cell100 column1">Crit Cardio</td>
-								<td class="cell100 column2">Gym</td>
-								<td class="cell100 column3">9:00 AM - 10:00 AM</td>
-								<td class="cell100 column4">Aaron Chapman</td>
-								<td class="cell100 column5">10</td>
-							</tr>
-
-							<tr class="row100 body">
-								<td class="cell100 column1">Wheel Pose Full Posture</td>
-								<td class="cell100 column2">Yoga</td>
-								<td class="cell100 column3">7:00 AM - 8:30 AM</td>
-								<td class="cell100 column4">Donna Wilson</td>
-								<td class="cell100 column5">15</td>
-							</tr>
-
-						</tbody>
-					</table>
-				</div>
-			</div>	
-		</div>	
-	</div>	
-	-->
-
+			</form>
+		</fieldset> 
+		<br>
+		<fieldset>  <legend>Details</legend> 
+			<div class='row' id='table' ></div>
+		</fieldset>
+	</div>
+</div>
 
 
 <script>
@@ -187,11 +130,12 @@
 					document.getElementById('table').innerHTML = '';
 					return false;
 				}
+				//<div class='row' id='table' ></div>
 				document.getElementById('table').innerHTML = "<table class = 'table table-bordered table-hover table-striped' id = 'dataTable'><thead><tr> <th hidden> id </th><th>Name</th> <th> Surname </th><th>Action</th></tr></thead ><tbody></tbody></table>";
 				var tableData;
 				for (var i = 0; i < data.length; i++)
 				{
-					tableData = "<tr><td hidden>" + data[i].id + "</td><td>" + data[i].name + "</td><td>" + data[i].surname + "</td><td><a onclick='edit(" + (i + 1) + ")' class='glyphicon glyphicon-edit'></a> | <a onclick='recordDelete(" + data[i].id + ")' class='glyphicon glyphicon-remove-circle'></a></td></tr>";
+					tableData = "<tr><td hidden>" + data[i].id + "</td><td>" + data[i].name + "</td><td>" + data[i].surname + "</td><td><a onclick='edit(" + (i + 1) + ")'><i class=\"fas fa-edit\"></i></a> | <a onclick='recordDelete(" + data[i].id + ")' ><i class=\"fas fa-trash-alt\"></i></a></td></tr>";
 					$('#dataTable').append(tableData);
 				}
 			}
@@ -222,4 +166,62 @@
 </script>
 </div> <!-- This is the end tag for the class="bodydiv" division in header jsp file -->
 
+<!--<div class="limiter">
+	<div class="wrap-table100">	
+		<div class="table100 ver1 m-b-110">
+			<div class="table100-head">
+				<table>
+					<thead>
+						<tr class="row100 head">
+							<th class="cell100 column1">Class name</th>
+							<th class="cell100 column2">Type</th>
+							<th class="cell100 column3">Hours</th>
+							<th class="cell100 column4">Trainer</th>
+							<th class="cell100 column5">Spots</th>
+						</tr>
+					</thead>
+				</table>
+			</div>
+
+			<div class="table100-body js-pscroll">
+				<table>
+					<tbody>
+						<tr class="row100 body">
+							<td class="cell100 column1">Like a butterfly</td>
+							<td class="cell100 column2">Boxing</td>
+							<td class="cell100 column3">9:00 AM - 11:00 AM</td>
+							<td class="cell100 column4">Aaron Chapman</td>
+							<td class="cell100 column5">10</td>
+						</tr>
+						<tr class="row100 body">
+							<td class="cell100 column1">Mind & Body</td>
+							<td class="cell100 column2">Yoga</td>
+							<td class="cell100 column3">8:00 AM - 9:00 AM</td>
+							<td class="cell100 column4">Adam Stewart</td>
+							<td class="cell100 column5">15</td>
+						</tr>
+
+						<tr class="row100 body">
+							<td class="cell100 column1">Crit Cardio</td>
+							<td class="cell100 column2">Gym</td>
+							<td class="cell100 column3">9:00 AM - 10:00 AM</td>
+							<td class="cell100 column4">Aaron Chapman</td>
+							<td class="cell100 column5">10</td>
+						</tr>
+
+						<tr class="row100 body">
+							<td class="cell100 column1">Wheel Pose Full Posture</td>
+							<td class="cell100 column2">Yoga</td>
+							<td class="cell100 column3">7:00 AM - 8:30 AM</td>
+							<td class="cell100 column4">Donna Wilson</td>
+							<td class="cell100 column5">15</td>
+						</tr>
+
+					</tbody>
+				</table>
+			</div>
+		</div>	
+	</div>	
+</div>	
+-->
 <%@include file="login/footer.jsp" %>

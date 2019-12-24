@@ -78,7 +78,7 @@
 					{
 						$('.btn').button('reset');
 						if (data.msg) {
-							console.log(data.token);
+//							console.log(data.token);
 							window.location.assign("<%=path%>/Login/" + data.token);
 						} else {
 							messages(data.error);
