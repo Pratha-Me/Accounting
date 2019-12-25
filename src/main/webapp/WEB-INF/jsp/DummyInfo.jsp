@@ -134,8 +134,6 @@
 					document.getElementById('table').innerHTML = '';
 					return false;
 				}
-				//<div class='row' id='table' ></div>
-//				document.getElementById('table').innerHTML = "<table class = 'table table-bordered table-hover table-striped' id = 'dataTable'><thead><tr> <th hidden> id </th><th>Name</th> <th> Surname </th><th>Action</th></tr></thead ><tbody></tbody></table>";
 				document.getElementById('table').innerHTML = "<table class = 'responstable' id='dataTable'><tr> <th hidden> <span> id </span> </th><th><span> Name</span> </th> <th> <span> Surname </span> </th><th><span> Action</span> </th></tr></table>";
 				var tableData;
 				for (var i = 0; i < data.length; i++)
@@ -171,62 +169,4 @@
 </script>
 </div> <!-- This is the end tag for the class="bodydiv" division in header jsp file -->
 
-<!--<div class="limiter">
-	<div class="wrap-table100">	
-		<div class="table100 ver1 m-b-110">
-			<div class="table100-head">
-				<table>
-					<thead>
-						<tr class="row100 head">
-							<th class="cell100 column1">Class name</th>
-							<th class="cell100 column2">Type</th>
-							<th class="cell100 column3">Hours</th>
-							<th class="cell100 column4">Trainer</th>
-							<th class="cell100 column5">Spots</th>
-						</tr>
-					</thead>
-				</table>
-			</div>
-
-			<div class="table100-body js-pscroll">
-				<table>
-					<tbody>
-						<tr class="row100 body">
-							<td class="cell100 column1">Like a butterfly</td>
-							<td class="cell100 column2">Boxing</td>
-							<td class="cell100 column3">9:00 AM - 11:00 AM</td>
-							<td class="cell100 column4">Aaron Chapman</td>
-							<td class="cell100 column5">10</td>
-						</tr>
-						<tr class="row100 body">
-							<td class="cell100 column1">Mind & Body</td>
-							<td class="cell100 column2">Yoga</td>
-							<td class="cell100 column3">8:00 AM - 9:00 AM</td>
-							<td class="cell100 column4">Adam Stewart</td>
-							<td class="cell100 column5">15</td>
-						</tr>
-
-						<tr class="row100 body">
-							<td class="cell100 column1">Crit Cardio</td>
-							<td class="cell100 column2">Gym</td>
-							<td class="cell100 column3">9:00 AM - 10:00 AM</td>
-							<td class="cell100 column4">Aaron Chapman</td>
-							<td class="cell100 column5">10</td>
-						</tr>
-
-						<tr class="row100 body">
-							<td class="cell100 column1">Wheel Pose Full Posture</td>
-							<td class="cell100 column2">Yoga</td>
-							<td class="cell100 column3">7:00 AM - 8:30 AM</td>
-							<td class="cell100 column4">Donna Wilson</td>
-							<td class="cell100 column5">15</td>
-						</tr>
-
-					</tbody>
-				</table>
-			</div>
-		</div>	
-	</div>	
-</div>	
--->
 <%@include file="login/footer.jsp" %>
