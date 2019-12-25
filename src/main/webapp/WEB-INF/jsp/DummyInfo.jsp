@@ -8,8 +8,9 @@
 
 <link rel="stylesheet" type="text/css" href="<%=path%>/Bootstrap/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 <!--<link rel="stylesheet" type="text/css" href="<%=path%>/Bootstrap/fonts/iconic/css/material-design-iconic-font.min.css">-->
-<link rel="stylesheet" type="text/css" href="<%=path%>/Bootstrap/css/util_table.css">
-<link rel="stylesheet" type="text/css" href="<%=path%>/Bootstrap/css/main_table.css">
+<!--<link rel="stylesheet" type="text/css" href="<%=path%>/Bootstrap/css/util_table.css">-->
+<!--<link rel="stylesheet" type="text/css" href="<%=path%>/Bootstrap/css/main_table.css">-->
+<link rel="stylesheet" type="text/css" href="<%=path%>/Bootstrap/css/style_table.css">
 
 <script defer src="<%=path%>/Bootstrap/js/main.js"></script>
 <!--
@@ -134,7 +135,8 @@
 					return false;
 				}
 				//<div class='row' id='table' ></div>
-				document.getElementById('table').innerHTML = "<table class = 'table table-bordered table-hover table-striped' id = 'dataTable'><thead><tr> <th hidden> id </th><th>Name</th> <th> Surname </th><th>Action</th></tr></thead ><tbody></tbody></table>";
+//				document.getElementById('table').innerHTML = "<table class = 'table table-bordered table-hover table-striped' id = 'dataTable'><thead><tr> <th hidden> id </th><th>Name</th> <th> Surname </th><th>Action</th></tr></thead ><tbody></tbody></table>";
+				document.getElementById('table').innerHTML = "<table class = 'responstable' id='dataTable'><tr> <th hidden> <span> id </span> </th><th><span> Name</span> </th> <th> <span> Surname </span> </th><th><span> Action</span> </th></tr></table>";
 				var tableData;
 				for (var i = 0; i < data.length; i++)
 				{

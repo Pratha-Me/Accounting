@@ -35,11 +35,11 @@
 				$(id).attr("checked", status);
 			}
         </script>
+        <!--<link href="<%=path%>/Bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
         <script src="<%=path%>/Bootstrap/js/jquery.min.js"></script>   
         <link href="<%=path%>/Bootstrap/js/jqueryToast/jquery.toast.min.css" rel="stylesheet" type="text/css"/>
         <script src="<%=path%>/Bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
         <script src="<%=path%>/Bootstrap/js/jqueryToast/jquery.toast.min.js" type="text/javascript"></script>
-        <!--<link href="<%=path%>/Bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
         <link href="<%=path%>/Bootstrap/css/style.css" rel="stylesheet">
 		<link href="<%=path%>/Bootstrap/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <script src="<%=path%>/Bootstrap/js/menujs.js" type="text/javascript"></script>
