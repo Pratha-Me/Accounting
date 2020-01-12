@@ -15,7 +15,7 @@ import java.util.Date;
  *
  * @author pratha
  */
-public class Token {
+public final class Token {
 
     String key = "37879801743341235475887701929";
     String userID, userName, userType;

@@ -6,63 +6,105 @@
 
 <%@include file="login/header.jsp" %>
 
-<link rel="stylesheet" type="text/css" href="<%=path%>/Bootstrap/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--<link rel="stylesheet" type="text/css" href="<%=path%>/Bootstrap/fonts/iconic/css/material-design-iconic-font.min.css">-->
-<!--<link rel="stylesheet" type="text/css" href="<%=path%>/Bootstrap/css/util_table.css">-->
-<!--<link rel="stylesheet" type="text/css" href="<%=path%>/Bootstrap/css/main_table.css">-->
 <link rel="stylesheet" type="text/css" href="<%=path%>/Bootstrap/css/style_table.css">
 
-<script defer src="<%=path%>/Bootstrap/js/main.js"></script>
-<!--
-<link rel="icon" type="image/png" href="images/icons/favicon.ico"/> @
-<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css"> @
-
-<script defer src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<script defer src="vendor/bootstrap/js/popper.js"></script>
-<script defer src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<script defer src="vendor/select2/select2.min.js"></script> @
-<script defer src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script> @
-<script defer src="js/main.js"></script>
--->
+<script src="<%=path%>/Bootstrap/js/jquery.min.js"></script>   
+<script defer="">
+	$(document).ready(function () {
+		if($('ul.navbar-nav li.nav-item').children())
+		$('ul.navbar-nav li.nav-item').removeClass('active');
+		$('#Pages').addClass('active');
+	});
+</script>
 
 <div class="row" style="display:flex; align-content: flex-start; justify-content: center;">
-	<div class = "col-lg-10" style="box-shadow: 0 0 1px rgba(0,0,0,.125),0 1px 3px rgba(0,0,0,.2); 
-		 border: 0 solid rgba(0,0,0,.125);
-		 border-radius: .25rem;">
-		<fieldset>  <legend>ADD INFO</legend> 
-			<form method='POST' id='dataFrom'> 
-				<div class="row">
-					<div class='col-lg-2 col-sm-2 col-md-2 col-xs-6' hidden>
-						<label>id</label>
-						<input type='text' name='id' id='id' class='form-control'/>
-					</div>
-					<div class='col-lg-2 col-sm-2 col-md-2 col-xs-6'>
-						<label>name</label>
-						<input type='text' name='name' id='name' class='form-control'/>
-					</div>
-					<div class='col-lg-2 col-sm-2 col-md-2 col-xs-6'>
-						<label>surname</label>
-						<input type='text' name='surname' id='surname' class='form-control'/>
-					</div>
+	<!-- Content Column -->
+	<div class="col-lg-10 mb-4">
 
-					<div class='col-lg-2 col-sm-2 col-md-2 col-xs-6'>
-						<label id='ActionMSG'>&nbsp;</label><br>
-						<input type='button' onclick='doSave()' id='Save' value='Save' class='btn btn-success'/>
-						<input type='button' onclick='doUpdate()'  id='Update' value='Update' class='btn btn-success' style='display: none'/>
-					</div>
-				</div>
-			</form>
-		</fieldset> 
-		<br></br>
-		
-		<fieldset>  <legend>Details</legend> 
-			<div class='row' id='table' ></div>
-		</fieldset>
+		<!-- Project Card Example -->
+		<div class="card shadow mb-4">
+			<div class="card-header py-3">
+				<h6 class="m-0 font-weight-bold text-primary">ADD INFO</h6>
+			</div>
+			<div class="card-body">
+				<fieldset>  <legend></legend> 
+					<form method='POST' id='dataFrom'> 
+						<div class="row">
+							<div class='col-lg-2 col-sm-2 col-md-2 col-xs-6' hidden>
+								<label>id</label>
+								<input type='text' name='id' id='id' class='form-control'/>
+							</div>
+							<div class='col-lg-2 col-sm-2 col-md-2 col-xs-6'>
+								<label>name</label>
+								<input type='text' name='name' id='name' class='form-control'/>
+							</div>
+							<div class='col-lg-2 col-sm-2 col-md-2 col-xs-6'>
+								<label>surname</label>
+								<input type='text' name='surname' id='surname' class='form-control'/>
+							</div>
+
+							<div class='col-lg-2 col-sm-2 col-md-2 col-xs-6'>
+								<label id='ActionMSG'>&nbsp;</label><br>
+								<input type='button' onclick='doSave()' id='Save' value='Save' class='btn btn-success'/>
+								<input type='button' onclick='doUpdate()'  id='Update' value='Update' class='btn btn-success' style='display: none'/>
+							</div>
+						</div>
+					</form>
+				</fieldset> 
+				<br></br>
+			</div>
+		</div>
 	</div>
+
+	<div class="col-lg-10 mb-4">
+
+		<!-- Project Card Example -->
+		<div class="card shadow mb-4">
+			<div class="card-header py-3">
+				<h6 class="m-0 font-weight-bold text-primary">Details</h6>
+			</div>
+			<div class="card-body">
+				<fieldset>  <legend></legend> 
+					<div class='row' id='table' ></div>
+				</fieldset>
+			</div>
+		</div>
+	</div>
+	<!--
+		<div class = "col-lg-10" style="box-shadow: 0 0 1px rgba(0,0,0,.125),0 1px 3px rgba(0,0,0,.2); 
+			 border: 0 solid rgba(0,0,0,.125);
+			 border-radius: .25rem;">
+			<fieldset>  <legend>ADD INFO</legend> 
+				<form method='POST' id='dataFrom'> 
+					<div class="row">
+						<div class='col-lg-2 col-sm-2 col-md-2 col-xs-6' hidden>
+							<label>id</label>
+							<input type='text' name='id' id='id' class='form-control'/>
+						</div>
+						<div class='col-lg-2 col-sm-2 col-md-2 col-xs-6'>
+							<label>name</label>
+							<input type='text' name='name' id='name' class='form-control'/>
+						</div>
+						<div class='col-lg-2 col-sm-2 col-md-2 col-xs-6'>
+							<label>surname</label>
+							<input type='text' name='surname' id='surname' class='form-control'/>
+						</div>
+	
+						<div class='col-lg-2 col-sm-2 col-md-2 col-xs-6'>
+							<label id='ActionMSG'>&nbsp;</label><br>
+							<input type='button' onclick='doSave()' id='Save' value='Save' class='btn btn-success'/>
+							<input type='button' onclick='doUpdate()'  id='Update' value='Update' class='btn btn-success' style='display: none'/>
+						</div>
+					</div>
+				</form>
+			</fieldset> 
+			<br></br>
+	
+			<fieldset>  <legend>Details</legend> 
+				<div class='row' id='table' ></div>
+			</fieldset>
+		</div>
+	-->
 </div>
 
 

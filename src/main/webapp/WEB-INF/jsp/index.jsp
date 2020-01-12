@@ -15,7 +15,7 @@
 
         <title>Welcome</title>
 
-		<link href="<%=path%>/Bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+		<!--<link href="<%=path%>/Bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>-->
         <script src="<%=path%>/Bootstrap/js/jquery.min.js" type="text/javascript"></script>
         <script src="<%=path%>/Bootstrap/js/jqueryToast/jquery.toast.min.js" type="text/javascript"></script>
         <script src="<%=path%>/Bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
@@ -27,7 +27,7 @@
         <link rel="stylesheet" type="text/css" href="<%=path%>/Bootstrap/css/util.css">
         <link rel="stylesheet" type="text/css" href="<%=path%>/Bootstrap/css/main_log.css">
 
-        <script defer src="<%=path%>/Bootstrap/js/main.js"></script>
+        <!--<script defer src="<%=path%>/Bootstrap/js/main.js"></script>-->
     </head>	
 
     <body>

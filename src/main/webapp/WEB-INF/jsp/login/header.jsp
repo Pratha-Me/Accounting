@@ -35,376 +35,337 @@
 				$(id).attr("checked", status);
 			}
         </script>
-        <!--<link href="<%=path%>/Bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
-        <script src="<%=path%>/Bootstrap/js/jquery.min.js"></script>   
-        <link href="<%=path%>/Bootstrap/js/jqueryToast/jquery.toast.min.css" rel="stylesheet" type="text/css"/>
+        <script defer="" src="<%=path%>/Bootstrap/js/jquery.min.js"></script>   
         <script src="<%=path%>/Bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
         <script src="<%=path%>/Bootstrap/js/jqueryToast/jquery.toast.min.js" type="text/javascript"></script>
-        <link href="<%=path%>/Bootstrap/css/style.css" rel="stylesheet">
-		<link href="<%=path%>/Bootstrap/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <script src="<%=path%>/Bootstrap/js/menujs.js" type="text/javascript"></script>
-		
-		<!-- Tell the browser to be responsive to screen width -->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- Font Awesome -->
-		<link rel="stylesheet" href="<%=path%>/Admin/plugins/fontawesome-free/css/all.min.css">
-		<!-- Ionicons -->
-		<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-		<!-- Tempusdominus Bbootstrap 4 -->
-		<link rel="stylesheet" href="<%=path%>/Admin/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
-		<!-- iCheck -->
-		<link rel="stylesheet" href="<%=path%>/Admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-		<!-- JQVMap -->
-		<link rel="stylesheet" href="<%=path%>/Admin/plugins/jqvmap/jqvmap.min.css">
-		<!-- Theme style -->
-		<link rel="stylesheet" href="<%=path%>/Admin/dist/css/adminlte.min.css">
-		<!-- overlayScrollbars -->
-		<link rel="stylesheet" href="<%=path%>/Admin/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
-		<!-- Daterange picker -->
-		<link rel="stylesheet" href="<%=path%>/Admin/plugins/daterangepicker/daterangepicker.css">
-		<!-- summernote -->
-		<link rel="stylesheet" href="<%=path%>/Admin/plugins/summernote/summernote-bs4.css">
-		<!-- Google Font: Source Sans Pro -->
-		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+        <!--<link href="<%=path%>/Bootstrap/css/style.css" rel="stylesheet">-->
+        <!--<link href="<%=path%>/Bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+        <link href="<%=path%>/Bootstrap/js/jqueryToast/jquery.toast.min.css" rel="stylesheet" type="text/css"/>
+		<link href="<%=path%>/Bootstrap/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-		<!-- jQuery -->
-		<script defer="" src="<%=path%>/Admin/plugins/jquery/jquery.min.js"></script>
-		<!-- jQuery UI 1.11.4 -->
-		<script defer="" src="<%=path%>/Admin/plugins/jquery-ui/jquery-ui.min.js"></script>
-		<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-		<script>
-			$.widget.bridge('uibutton', $.ui.button);
-		</script>
-		<!-- Bootstrap 4 -->
-		<script defer="" src="<%=path%>/Admin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-		<!-- ChartJS -->
-		<script defer="" src="<%=path%>/Admin/plugins/chart.js/Chart.min.js"></script>
-		<!-- Sparkline -->
-		<script defer="" src="<%=path%>/Admin/plugins/sparklines/sparkline.js"></script>
-		<!-- JQVMap -->
-		<script defer="" src="<%=path%>/Admin/plugins/jqvmap/jquery.vmap.min.js"></script>
-		<script defer="" src="<%=path%>/Admin/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
-		<!-- jQuery Knob Chart -->
-		<script defer="" src="<%=path%>/Admin/plugins/jquery-knob/jquery.knob.min.js"></script>
-		<!-- daterangepicker -->
-		<script defer="" src="<%=path%>/Admin/plugins/moment/moment.min.js"></script>
-		<script defer="" src="<%=path%>/Admin/plugins/daterangepicker/daterangepicker.js"></script>
-		<!-- Tempusdominus Bootstrap 4 -->
-		<script defer="" src="<%=path%>/Admin/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
-		<!-- Summernote -->
-		<script defer="" src="<%=path%>/Admin/plugins/summernote/summernote-bs4.min.js"></script>
-		<!-- overlayScrollbars -->
-		<script defer="" src="<%=path%>/Admin/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
-		<!-- AdminLTE App -->
-		<script defer="" src="<%=path%>/Admin/dist/js/adminlte.js"></script>
-		<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-		<script defer="" src="<%=path%>/Admin/dist/js/pages/dashboard.js"></script>
-		<!-- AdminLTE for demo purposes -->
-		<script defer="" src="<%=path%>/Admin/dist/js/demo.js"></script>
+		<!-- Custom fonts for this template-->
+		<link href="<%=path%>/Bootstrap/Admin/all.min.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+		<link href="<%=path%>/Bootstrap/Admin/css/sb-admin-2.css" rel="stylesheet">
 
-		<script defer="" src="<%=path%>/Bootstrap/js/jquery.min.js" type="text/javascript"></script>
-		<script defer="" src="<%=path%>/Bootstrap/js/jqueryToast/jquery.toast.min.js" type="text/javascript"></script>
-		<script defer="" src="<%=path%>/Bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+		<script defer="" src="<%=path%>/Bootstrap/Admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script defer="" src="<%=path%>/Bootstrap/Admin/vendor/jquery-easing/jquery.easing.min.js"></script>
+		<script defer="" src="<%=path%>/Bootstrap/Admin/js/sb-admin-2.min.js"></script>
+		<!-- Page level plugins -->
+		<!--<script defer="" src="<%=path%>/Bootstrap/Admin/vendor/chart.js/Chart.min.js"></script>-->
+		<!-- Page level custom scripts -->
+		<!--
+  		<script defer="" src="<%=path%>/Bootstrap/Admin/js/demo/chart-area-demo.js"></script>
+		<script defer="" src="<%=path%>/Bootstrap/Admin/js/demo/chart-pie-demo.js"></script>
+		-->
 	</head>
 
-	<body class="hold-transition sidebar-mini layout-fixed">
-		<div class="wrapper">
+	<body id="page-top">
 
-			<!-- Navbar -->
-			<nav class="main-header navbar navbar-expand navbar-white navbar-light">
-				<!-- Left navbar links -->
-				<ul class="navbar-nav">
-					<li class="nav-item">
-						<a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
-					</li>
-					<li class="nav-item d-none d-sm-inline-block">
-						<a href="home" class="nav-link">Home</a>
-					</li>
-					<li class="nav-item d-none d-sm-inline-block">
-						<a href="#" class="nav-link">Contact</a>
-					</li>
-				</ul>
+		<!-- Page Wrapper -->
+		<div id="wrapper">
 
-				<!-- SEARCH FORM -->
-				<form class="form-inline ml-3">
-					<div class="input-group input-group-sm">
-						<input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
-						<div class="input-group-append">
-							<button class="btn btn-navbar" type="submit">
-								<i class="fas fa-search"></i>
-							</button>
-						</div>
+			<!-- Sidebar -->
+			<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+				<!-- Sidebar - Brand -->
+				<a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+					<div class="sidebar-brand-icon rotate-n-15">
+						<i class="fas fa-laugh-wink"></i>
 					</div>
-				</form>
-
-				<!-- Right navbar links -->
-				<ul class="navbar-nav ml-auto">
-					<!-- Messages Dropdown Menu -->
-					<li class="nav-item dropdown">
-						<a class="nav-link" data-toggle="dropdown" href="#">
-							<i class="far fa-comments"></i>
-							<span class="badge badge-danger navbar-badge">3</span>
-						</a>
-						<div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-							<a href="#" class="dropdown-item">
-								<!-- Message Start -->
-								<div class="media">
-									<img src="<%=path%>/Admin/dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
-									<div class="media-body">
-										<h3 class="dropdown-item-title">
-											Brad Diesel
-											<span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
-										</h3>
-										<p class="text-sm">Call me whenever you can...</p>
-										<p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-									</div>
-								</div>
-								<!-- Message End -->
-							</a>
-							<div class="dropdown-divider"></div>
-							<a href="#" class="dropdown-item">
-								<!-- Message Start -->
-								<div class="media">
-									<img src="<%=path%>/Admin/dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
-									<div class="media-body">
-										<h3 class="dropdown-item-title">
-											John Pierce
-											<span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
-										</h3>
-										<p class="text-sm">I got your message bro</p>
-										<p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-									</div>
-								</div>
-								<!-- Message End -->
-							</a>
-							<div class="dropdown-divider"></div>
-							<a href="#" class="dropdown-item">
-								<!-- Message Start -->
-								<div class="media">
-									<img src="<%=path%>/Admin/dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
-									<div class="media-body">
-										<h3 class="dropdown-item-title">
-											Nora Silvester
-											<span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
-										</h3>
-										<p class="text-sm">The subject goes here</p>
-										<p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-									</div>
-								</div>
-								<!-- Message End -->
-							</a>
-							<div class="dropdown-divider"></div>
-							<a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
-						</div>
-					</li>
-					<!-- Notifications Dropdown Menu -->
-					<li class="nav-item dropdown">
-						<a class="nav-link" data-toggle="dropdown" href="#">
-							<i class="far fa-bell"></i>
-							<span class="badge badge-warning navbar-badge">15</span>
-						</a>
-						<div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-							<span class="dropdown-item dropdown-header">15 Notifications</span>
-							<div class="dropdown-divider"></div>
-							<a href="#" class="dropdown-item">
-								<i class="fas fa-envelope mr-2"></i> 4 new messages
-								<span class="float-right text-muted text-sm">3 mins</span>
-							</a>
-							<div class="dropdown-divider"></div>
-							<a href="#" class="dropdown-item">
-								<i class="fas fa-users mr-2"></i> 8 friend requests
-								<span class="float-right text-muted text-sm">12 hours</span>
-							</a>
-							<div class="dropdown-divider"></div>
-							<a href="#" class="dropdown-item">
-								<i class="fas fa-file mr-2"></i> 3 new reports
-								<span class="float-right text-muted text-sm">2 days</span>
-							</a>
-							<div class="dropdown-divider"></div>
-							<a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
-						</div>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#">
-							<i class="fas fa-th-large"></i>
-						</a>
-					</li>
-				</ul>
-			</nav>
-			<!-- /.navbar -->
-
-			<!-- Main Sidebar Container -->
-			<aside class="main-sidebar sidebar-dark-primary elevation-4">
-				<!-- Brand Logo -->
-				<a href="home" class="brand-link">
-					<img src="<%=path%>/Admin/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-						 style="opacity: .8">
-					<span class="brand-text font-weight-light">AdminLTE 3</span>
+					<div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
 				</a>
 
-				<!-- Sidebar -->
-				<div class="sidebar">
-					<!-- Sidebar user panel (optional) -->
-					<div class="user-panel mt-3 pb-3 mb-3 d-flex">
-						<div class="image">
-							<img src="<%=path%>/Admin/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
-						</div>
-						<div class="info">
-							<a href="#" class="d-block">Alexander Pierce</a>
+				<!-- Divider -->
+				<hr class="sidebar-divider my-0">
+
+				<!-- Nav Item - Dashboard -->
+				<li class="nav-item active">
+					<a class="nav-link" href="index.html">
+						<i class="fas fa-fw fa-tachometer-alt"></i>
+						<span>Dashboard</span></a>
+				</li>
+
+				<!-- Divider -->
+				<hr class="sidebar-divider">
+
+				<!-- Heading -->
+				<div class="sidebar-heading">
+					Interface
+				</div>
+
+				<!-- Nav Item - Pages Collapse Menu -->
+				<li class="nav-item">
+					<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+						<i class="fas fa-fw fa-cog"></i>
+						<span>Components</span>
+					</a>
+					<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+						<div class="bg-white py-2 collapse-inner rounded">
+							<h6 class="collapse-header">Custom Components:</h6>
+							<a class="collapse-item" href="buttons.html">Buttons</a>
+							<a class="collapse-item" href="cards.html">Cards</a>
 						</div>
 					</div>
+				</li>
 
-					<!-- Sidebar Menu -->
-					<nav class="mt-2">
-						<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-							<!-- Add icons to the links using the .nav-icon class
-								 with font-awesome or any other icon font library -->
-							<li class="nav-header">HOME</li>
-							<li class="nav-item has-treeview menu-open">
-								<a href="#" class="nav-link">
-									<i class="nav-icon fas fa-tachometer-alt"></i>
-									<p>
-										Dashboard
-										<i class="right fas fa-angle-left"></i>
-									</p>
+				<!-- Nav Item - Utilities Collapse Menu -->
+				<li class="nav-item">
+					<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+						<i class="fas fa-fw fa-wrench"></i>
+						<span>Utilities</span>
+					</a>
+					<div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+						<div class="bg-white py-2 collapse-inner rounded">
+							<h6 class="collapse-header">Custom Utilities:</h6>
+							<a class="collapse-item" href="utilities-color.html">Colors</a>
+							<a class="collapse-item" href="utilities-border.html">Borders</a>
+							<a class="collapse-item" href="utilities-animation.html">Animations</a>
+							<a class="collapse-item" href="utilities-other.html">Other</a>
+						</div>
+					</div>
+				</li>
+
+				<!-- Divider -->
+				<hr class="sidebar-divider">
+
+				<!-- Heading -->
+				<div class="sidebar-heading">
+					Addons
+				</div>
+
+				<!-- Nav Item - Pages Collapse Menu -->
+				<li id="Pages" class="nav-item">
+					<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
+						<i class="fas fa-fw fa-folder"></i>
+						<span>Pages</span>
+					</a>
+					<div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+						<div class="bg-white py-2 collapse-inner rounded">
+							<h6 class="collapse-header">Login Screens:</h6>
+							<a class="collapse-item" href="<%=path%>/DummyInfo">DummyInfo</a>
+							<a class="collapse-item" href="login.html">Login</a>
+							<a class="collapse-item" href="register.html">Register</a>
+							<a class="collapse-item" href="forgot-password.html">Forgot Password</a>
+							<div class="collapse-divider"></div>
+							<h6 class="collapse-header">Other Pages:</h6>
+							<a class="collapse-item" href="404.html">404 Page</a>
+							<a class="collapse-item" href="blank.html">Blank Page</a>
+						</div>
+					</div>
+				</li>
+
+				<!-- Nav Item - Charts -->
+				<li class="nav-item">
+					<a class="nav-link" href="charts.html">
+						<i class="fas fa-fw fa-chart-area"></i>
+						<span>Charts</span></a>
+				</li>
+
+				<!-- Nav Item - Tables -->
+				<li class="nav-item">
+					<a class="nav-link" href="tables.html">
+						<i class="fas fa-fw fa-table"></i>
+						<span>Tables</span></a>
+				</li>
+
+				<!-- Divider -->
+				<hr class="sidebar-divider d-none d-md-block">
+
+				<!-- Sidebar Toggler (Sidebar) -->
+				<div class="text-center d-none d-md-inline">
+					<button class="rounded-circle border-0" id="sidebarToggle"></button>
+				</div>
+
+			</ul>
+			<!-- End of Sidebar -->
+
+			<!-- Content Wrapper -->
+			<div id="content-wrapper" class="d-flex flex-column">
+
+				<!-- Main Content -->
+				<div id="content">
+
+					<!-- Topbar -->
+					<nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+						<!-- Sidebar Toggle (Topbar) -->
+						<button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+							<i class="fa fa-bars"></i>
+						</button>
+
+						<!-- Topbar Search -->
+						<form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+							<div class="input-group">
+								<input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+								<div class="input-group-append">
+									<button class="btn btn-primary" type="button">
+										<i class="fas fa-search fa-sm"></i>
+									</button>
+								</div>
+							</div>
+						</form>
+
+						<!-- Topbar Navbar -->
+						<ul class="navbar-nav ml-auto">
+
+							<!-- Nav Item - Search Dropdown (Visible Only XS) -->
+							<li class="nav-item dropdown no-arrow d-sm-none">
+								<a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<i class="fas fa-search fa-fw"></i>
 								</a>
-								<ul class="nav nav-treeview">
-									<li class="nav-item">
-										<a href="<%=path%>/Admin/./index.html" class="nav-link active">
-											<i class="far fa-circle nav-icon"></i>
-											<p>Dashboard v1</p>
-										</a>
-									</li>
-									<li class="nav-item">
-										<a href="<%=path%>/Admin/./index2.html" class="nav-link">
-											<i class="far fa-circle nav-icon"></i>
-											<p>Dashboard v2</p>
-										</a>
-									</li>
-									<li class="nav-item">
-										<a href="<%=path%>/Admin/./index3.html" class="nav-link">
-											<i class="far fa-circle nav-icon"></i>
-											<p>Dashboard v3</p>
-										</a>
-									</li>
-								</ul>
+								<!-- Dropdown - Messages -->
+								<div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+									<form class="form-inline mr-auto w-100 navbar-search">
+										<div class="input-group">
+											<input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+											<div class="input-group-append">
+												<button class="btn btn-primary" type="button">
+													<i class="fas fa-search fa-sm"></i>
+												</button>
+											</div>
+										</div>
+									</form>
+								</div>
 							</li>
-							<li class="nav-item has-treeview">
-								<a href="#" class="nav-link">
-									<i class="nav-icon fas fa-chart-pie"></i>
-									<p>
-										Charts
-										<i class="right fas fa-angle-left"></i>
-									</p>
+
+							<!-- Nav Item - Alerts -->
+							<li class="nav-item dropdown no-arrow mx-1">
+								<a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<i class="fas fa-bell fa-fw"></i>
+									<!-- Counter - Alerts -->
+									<span class="badge badge-danger badge-counter">3+</span>
 								</a>
-								<ul class="nav nav-treeview">
-									<li class="nav-item">
-										<a href="<%=path%>/Admin/pages/charts/chartjs.html" class="nav-link">
-											<i class="far fa-circle nav-icon"></i>
-											<p>ChartJS</p>
-										</a>
-									</li>
-									<li class="nav-item">
-										<a href="<%=path%>/Admin/pages/charts/flot.html" class="nav-link">
-											<i class="far fa-circle nav-icon"></i>
-											<p>Flot</p>
-										</a>
-									</li>
-									<li class="nav-item">
-										<a href="<%=path%>/Admin/pages/charts/inline.html" class="nav-link">
-											<i class="far fa-circle nav-icon"></i>
-											<p>Inline</p>
-										</a>
-									</li>
-								</ul>
+								<!-- Dropdown - Alerts -->
+								<div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+									<h6 class="dropdown-header">
+										Alerts Center
+									</h6>
+									<a class="dropdown-item d-flex align-items-center" href="#">
+										<div class="mr-3">
+											<div class="icon-circle bg-primary">
+												<i class="fas fa-file-alt text-white"></i>
+											</div>
+										</div>
+										<div>
+											<div class="small text-gray-500">December 12, 2019</div>
+											<span class="font-weight-bold">A new monthly report is ready to download!</span>
+										</div>
+									</a>
+									<a class="dropdown-item d-flex align-items-center" href="#">
+										<div class="mr-3">
+											<div class="icon-circle bg-success">
+												<i class="fas fa-donate text-white"></i>
+											</div>
+										</div>
+										<div>
+											<div class="small text-gray-500">December 7, 2019</div>
+											$290.29 has been deposited into your account!
+										</div>
+									</a>
+									<a class="dropdown-item d-flex align-items-center" href="#">
+										<div class="mr-3">
+											<div class="icon-circle bg-warning">
+												<i class="fas fa-exclamation-triangle text-white"></i>
+											</div>
+										</div>
+										<div>
+											<div class="small text-gray-500">December 2, 2019</div>
+											Spending Alert: We've noticed unusually high spending for your account.
+										</div>
+									</a>
+									<a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+								</div>
 							</li>
-							<li class="nav-item has-treeview">
-								<a href="#" class="nav-link">
-									<i class="nav-icon fas fa-edit"></i>
-									<p>
-										Forms
-										<i class="fas fa-angle-left right"></i>
-									</p>
+
+							<!-- Nav Item - Messages -->
+							<li class="nav-item dropdown no-arrow mx-1">
+								<a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<i class="fas fa-envelope fa-fw"></i>
+									<!-- Counter - Messages -->
+									<span class="badge badge-danger badge-counter">7</span>
 								</a>
-								<ul class="nav nav-treeview">
-									<li class="nav-item">
-										<a href="<%=path%>/Admin/pages/forms/general.html" class="nav-link">
-											<i class="far fa-circle nav-icon"></i>
-											<p>General Elements</p>
-										</a>
-									</li>
-									<li class="nav-item">
-										<a href="<%=path%>/Admin/pages/forms/advanced.html" class="nav-link">
-											<i class="far fa-circle nav-icon"></i>
-											<p>Advanced Elements</p>
-										</a>
-									</li>
-									<li class="nav-item">
-										<a href="<%=path%>/Admin/pages/forms/editors.html" class="nav-link">
-											<i class="far fa-circle nav-icon"></i>
-											<p>Editors</p>
-										</a>
-									</li>
-								</ul>
+								<!-- Dropdown - Messages -->
+								<div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
+									<h6 class="dropdown-header">
+										Message Center
+									</h6>
+									<a class="dropdown-item d-flex align-items-center" href="#">
+										<div class="dropdown-list-image mr-3">
+											<img class="rounded-circle" src="https://source.unsplash.com/fn_BT9fwg_E/60x60" alt="">
+											<div class="status-indicator bg-success"></div>
+										</div>
+										<div class="font-weight-bold">
+											<div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been having.</div>
+											<div class="small text-gray-500">Emily Fowler · 58m</div>
+										</div>
+									</a>
+									<a class="dropdown-item d-flex align-items-center" href="#">
+										<div class="dropdown-list-image mr-3">
+											<img class="rounded-circle" src="https://source.unsplash.com/AU4VPcFN4LE/60x60" alt="">
+											<div class="status-indicator"></div>
+										</div>
+										<div>
+											<div class="text-truncate">I have the photos that you ordered last month, how would you like them sent to you?</div>
+											<div class="small text-gray-500">Jae Chun · 1d</div>
+										</div>
+									</a>
+									<a class="dropdown-item d-flex align-items-center" href="#">
+										<div class="dropdown-list-image mr-3">
+											<img class="rounded-circle" src="https://source.unsplash.com/CS2uCrpNzJY/60x60" alt="">
+											<div class="status-indicator bg-warning"></div>
+										</div>
+										<div>
+											<div class="text-truncate">Last month's report looks great, I am very happy with the progress so far, keep up the good work!</div>
+											<div class="small text-gray-500">Morgan Alvarez · 2d</div>
+										</div>
+									</a>
+									<a class="dropdown-item d-flex align-items-center" href="#">
+										<div class="dropdown-list-image mr-3">
+											<img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt="">
+											<div class="status-indicator bg-success"></div>
+										</div>
+										<div>
+											<div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</div>
+											<div class="small text-gray-500">Chicken the Dog · 2w</div>
+										</div>
+									</a>
+									<a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+								</div>
 							</li>
-							<li class="nav-item has-treeview">
-								<a href="#" class="nav-link">
-									<i class="nav-icon fas fa-table"></i>
-									<p>
-										Tables
-										<i class="fas fa-angle-left right"></i>
-									</p>
+
+							<div class="topbar-divider d-none d-sm-block"></div>
+
+							<!-- Nav Item - User Information -->
+							<li class="nav-item dropdown no-arrow">
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
+									<img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
 								</a>
-								<ul class="nav nav-treeview">
-									<li class="nav-item">
-										<a href="<%=path%>/DummyInfo" class="nav-link">
-											<i class="far fa-circle nav-icon"></i>
-											<p>DummyInfo</p>
-										</a>
-									</li>
-									<li class="nav-item">
-										<a href="<%=path%>/Admin/pages/tables/simple.html" class="nav-link">
-											<i class="far fa-circle nav-icon"></i>
-											<p>Simple Tables</p>
-										</a>
-									</li>
-									<li class="nav-item">
-										<a href="<%=path%>/Admin/pages/tables/data.html" class="nav-link">
-											<i class="far fa-circle nav-icon"></i>
-											<p>DataTables</p>
-										</a>
-									</li>
-									<li class="nav-item">
-										<a href="<%=path%>/Admin/pages/tables/jsgrid.html" class="nav-link">
-											<i class="far fa-circle nav-icon"></i>
-											<p>jsGrid</p>
-										</a>
-									</li>
-								</ul>
+								<!-- Dropdown - User Information -->
+								<div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+									<a class="dropdown-item" href="#">
+										<i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+										Profile
+									</a>
+									<a class="dropdown-item" href="#">
+										<i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+										Settings
+									</a>
+									<a class="dropdown-item" href="#">
+										<i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+										Activity Log
+									</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+										<i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+										Logout
+									</a>
+								</div>
 							</li>
+
 						</ul>
-					</nav>
-					<!-- /.sidebar-menu -->
-				</div>
-				<!-- /.sidebar -->
-			</aside>
 
-			<!-- Content Wrapper. Contains page content -->
-			<div class="content-wrapper">
-				<!-- Content Header (Page header) -->
-				<div class="content-header">
-					<div class="container-fluid">
-						<div class="row mb-2">
-							<div class="col-sm-6">
-								<h1 class="m-0 text-dark">PRATHA</h1>
-							</div><!-- /.col -->
-							<div class="col-sm-6">
-								<ol class="breadcrumb float-sm-right">
-									<li class="breadcrumb-item"><a href="home">Home</a></li>
-									<li class="breadcrumb-item active">Dashboard v1</li>
-								</ol>
-							</div><!-- /.col -->
-						</div><!-- /.row -->
-					</div><!-- /.container-fluid -->
-				</div>
-				<!-- /.content-header -->
+					</nav>
+					<!-- End of Topbar -->
