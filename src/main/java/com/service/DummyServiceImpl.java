@@ -65,7 +65,7 @@ public class DummyServiceImpl implements DummyService {
 	@Override
 	public Object doDelete(Long id) {
 		String sql = "DELETE FROM dummy WHERE ID=" + id;
-		int count = dao.delete(sql);
+		int count = dao.delete(sql); //msg.db.delete(sql); 
 		if (count == 1) {
 			return msg.respondWithMessage("Success");
 		}
