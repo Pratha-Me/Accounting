@@ -25,22 +25,22 @@ public class DummyRestController {
     DummyService service;
 
     @GetMapping
-    public Object index() {
+    public Object getRecord() {
         return service.getRecord();
     }
 
     @PostMapping
-    public Object doSave(@RequestBody DummyModel obj) {
+    public Object Save(@RequestBody DummyModel obj) {
         return service.doSave(obj);
     }
 
     @PutMapping("/{id}")
-    public Object doUpdate(@PathVariable long id, @RequestBody DummyModel obj) {
+    public Object Update(@PathVariable long id, @RequestBody DummyModel obj) {
         return service.doUpdate(obj, id);
     }
 
     @DeleteMapping("/{id}")
-    public Object doDelete(@PathVariable long id) {
+    public Object Delete(@PathVariable long id) {
         return service.doDelete(id);
     }
 }

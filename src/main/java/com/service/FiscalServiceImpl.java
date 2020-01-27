@@ -5,8 +5,8 @@
  */
 package com.service;
 
-import com.dao.DummyDao;
-import com.model.DummyModel;
+import com.dao.FiscalDao;
+import com.model.FiscalModel;
 import java.util.List;
 import java.util.Map;
 import model.Message;
@@ -17,32 +17,24 @@ import org.springframework.stereotype.Service;
  *
  * @author pratha
  */
-
 @Service
-public class DummyServiceImpl implements DummyService {
+public class FiscalServiceImpl implements FiscalService{
 
 	@Autowired
-	DummyDao dao;
+	FiscalDao dao;
 
 	Message msg = new Message();
-
+	
 	@Override
 	public Object getRecord() {
-		List list = dao.getRecord("from DummyModel");
-		if (!list.isEmpty()) {
-			return list;
-		}
+		List list = dao.getRecord("from FiscalModel");
+		if(!list.isEmpty()) return list;
 		return msg.respondWithError(dao.getMsg());
 	}
 
 	@Override
-	public Object doSave(DummyModel obj) {
-/*		
-		Token td = new Token();
-		obj.setEnterBy(td.getUserID());
-		obj.setEnterDate(new Date());
-*/
-		String sql = "SELECT IFNULL(MAX(ID), 0) + 1 AS id FROM dummy";
+	public Object doSave(FiscalModel obj) {
+		String sql = "SELECT IFNULL(MAX(ID), 0)+ 1 AS id FROM fiscal_year";
 		msg.map = (Map) msg.db.getRecord(sql).get(0);
 		obj.setId(Long.parseLong(msg.map.get("id").toString()));
 		int count = dao.save(obj);
@@ -53,11 +45,11 @@ public class DummyServiceImpl implements DummyService {
 	}
 
 	@Override
-	public Object doUpdate(DummyModel obj, long id) {
+	public Object doUpdate(FiscalModel obj, long id) {
 		obj.setId(id);
 		int count = dao.update(obj);
 		if (count == 1) {
-			return msg.respondWithMessage("Success");
+			return msg.respondWithMessage("Successfully Saved");
 		}
 		return msg.respondWithError(dao.getMsg());
 	}

@@ -33,7 +33,6 @@ public class DB {
 		try{ 
 			session.close();
 		} catch(Exception e){
-			;
 		}
 		
 		return a;
@@ -57,7 +56,6 @@ public class DB {
 		try{ 
 			session.close();
 		} catch(Exception e){
-			;
 		}
 		
 		return a;

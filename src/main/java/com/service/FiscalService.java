@@ -5,19 +5,19 @@
  */
 package com.service;
 
-import com.model.DummyModel;
+import com.model.FiscalModel;
 
 /**
  *
  * @author pratha
  */
-public interface DummyService {
+public interface FiscalService {
 	
 	public Object getRecord();
 
-	public Object doSave(DummyModel obj);
+	public Object doSave(FiscalModel obj);
 
-	public Object doUpdate(DummyModel obj, long id);
-	
+	public Object doUpdate(FiscalModel obj, long id);
+
 	public Object doDelete(long id);
 }
