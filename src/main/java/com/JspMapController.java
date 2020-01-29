@@ -10,25 +10,30 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 @ComponentScan
 public class JspMapController {
-
+	
 	@RequestMapping(value = "Logout", method = RequestMethod.GET)
 	public String Logout() {
 		return "Logout";
 	}
-
+	
 	@RequestMapping(value = "/Login/{token}", method = RequestMethod.GET)
 	public String index(HttpSession session, @PathVariable String token) {
 		session.setAttribute("token", "Bearer " + token);
 		return "redirect:../home";
 	}
-
+	
 	@RequestMapping(value = "/home", method = RequestMethod.GET)
 	public String home() {
 		return "home";
 	}
-
-      @RequestMapping(value = "/DummyInfo", method = RequestMethod.GET)
-      public String DummyInfo() {
-            return "DummyInfo";
-      }
+	
+	@RequestMapping(value = "/DummyInfo", method = RequestMethod.GET)
+	public String DummyInfo() {
+		return "DummyInfo";
+	}
+	
+	@RequestMapping(value = "/Fiscal", method = RequestMethod.GET)
+	public String Fiscal() {
+		return "Fiscal";
+	}
 }
