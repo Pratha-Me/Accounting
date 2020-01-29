@@ -27,13 +27,13 @@ public class JspMapController {
 		return "home";
 	}
 	
-	@RequestMapping(value = "/DummyInfo", method = RequestMethod.GET)
-	public String DummyInfo() {
-		return "DummyInfo";
-	}
-	
 	@RequestMapping(value = "/Fiscal", method = RequestMethod.GET)
 	public String Fiscal() {
 		return "Fiscal";
+	}
+	
+	@RequestMapping(value = "/DummyInfo", method = RequestMethod.GET)
+	public String DummyInfo() {
+		return "DummyInfo";
 	}
 }

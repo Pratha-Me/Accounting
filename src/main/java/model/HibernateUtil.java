@@ -38,7 +38,7 @@ public class HibernateUtil {
 			sessionFactory = new Configuration()
 					.addProperties(property)
 					.addAnnotatedClass(DummyModel.class)
-//					.addAnnotatedClass(FiscalModel.class)
+					.addAnnotatedClass(FiscalModel.class)
 					.buildSessionFactory();
 		} catch (Throwable ex) {
 			throw new ExceptionInInitializerError(ex);
