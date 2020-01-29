@@ -30,8 +30,8 @@ public class HibernateUtil {
 			property.setProperty("hibernate.connection.url", "jdbc:mysql://localhost:3306/" + database + "?autoReconnect=true&useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false");
 			property.setProperty("hibernate.connection.username", username);
 			property.setProperty("hibernate.connection.password", password);
-//			property.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQLDialect");
-			property.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5InnoDBDialect");
+			property.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQLDialect");
+//			property.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5InnoDBDialect");
 			property.setProperty("hibernate.temp.use_jdbc_metadata_defaults", "false");
 			property.setProperty("hibernate.hbm2ddl.auto", "update");
 			property.setProperty("hibernate.show_sql", "true");

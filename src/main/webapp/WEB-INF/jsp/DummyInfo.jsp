@@ -70,41 +70,6 @@
 			</div>
 		</div>
 	</div>
-	<!--
-		<div class = "col-lg-10" style="box-shadow: 0 0 1px rgba(0,0,0,.125),0 1px 3px rgba(0,0,0,.2); 
-			 border: 0 solid rgba(0,0,0,.125);
-			 border-radius: .25rem;">
-			<fieldset>  <legend>ADD INFO</legend> 
-				<form method='POST' id='dataFrom'> 
-					<div class="row">
-						<div class='col-lg-2 col-sm-2 col-md-2 col-xs-6' hidden>
-							<label>id</label>
-							<input type='text' name='id' id='id' class='form-control'/>
-						</div>
-						<div class='col-lg-2 col-sm-2 col-md-2 col-xs-6'>
-							<label>name</label>
-							<input type='text' name='name' id='name' class='form-control'/>
-						</div>
-						<div class='col-lg-2 col-sm-2 col-md-2 col-xs-6'>
-							<label>surname</label>
-							<input type='text' name='surname' id='surname' class='form-control'/>
-						</div>
-	
-						<div class='col-lg-2 col-sm-2 col-md-2 col-xs-6'>
-							<label id='ActionMSG'>&nbsp;</label><br>
-							<input type='button' onclick='doSave()' id='Save' value='Save' class='btn btn-success'/>
-							<input type='button' onclick='doUpdate()'  id='Update' value='Update' class='btn btn-success' style='display: none'/>
-						</div>
-					</div>
-				</form>
-			</fieldset> 
-			<br></br>
-	
-			<fieldset>  <legend>Details</legend> 
-				<div class='row' id='table' ></div>
-			</fieldset>
-		</div>
-	-->
 </div>
 
 
