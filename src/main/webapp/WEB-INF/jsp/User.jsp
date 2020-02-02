@@ -34,23 +34,27 @@
 								<label>id</label>
 								<input type='text' name='id' id='id' class='form-control'/>
 							</div>
-							<div class='col-lg-4 col-sm-2 col-md-2 col-xs-6'>
+							<div class='col-lg-2 col-sm-2 col-md-2 col-xs-6'>
 								<label>User Name</label>
 								<input type='text' name='name' id='name' class='form-control'/>
 							</div>
 							<div class='col-lg-2 col-sm-2 col-md-2 col-xs-6'>
-								<label>Start Date</label>
-								<input type='text' name='startDate' id='startDate' class='form-control'/>
+								<label>Mobile</label>
+								<input type='text' name='mobile' id='mobile' class='form-control'/>
 							</div>
 							<div class='col-lg-2 col-sm-2 col-md-2 col-xs-6'>
-								<label>End Date</label>
-								<input type='text' name='endDate' id='endDate' class='form-control'/>
+								<label>Email</label>
+								<input type='text' name='email' id='email' class='form-control'/>
 							</div>
-							<div class='col-lg-2 col-sm-2 col-md-2 col-xs-6'>
+							<div class='col-lg-1 col-sm-2 col-md-2 col-xs-6'>
 								<label>Status</label>
 								<input type='text' name='status' id='status' class='form-control'/>
 							</div>
-								
+							<div class='col-lg-2 col-sm-2 col-md-2 col-xs-6'>
+								<label>Join Date</label>
+								<input type='text' name='date' id='date' class='form-control'/>
+							</div>
+							
 							<div class='col-lg-2 col-sm-2 col-md-2 col-xs-6'>
 								<label id='ActionMSG'>&nbsp;</label><br>
 								<input type='button' onclick='doSave()' id='Save' value='Save' class='btn btn-success'/>
