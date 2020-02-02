@@ -32,6 +32,16 @@ public class JspMapController {
 		return "Fiscal";
 	}
 	
+	@RequestMapping(value = "/Master", method = RequestMethod.GET)
+	public String Master() {
+		return "Master";
+	}
+	
+	@RequestMapping(value = "/User", method = RequestMethod.GET)
+	public String User() {
+		return "User";
+	}
+	
 	@RequestMapping(value = "/DummyInfo", method = RequestMethod.GET)
 	public String DummyInfo() {
 		return "DummyInfo";

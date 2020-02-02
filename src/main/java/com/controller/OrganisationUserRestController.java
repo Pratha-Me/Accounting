@@ -1,4 +1,3 @@
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -6,8 +5,8 @@
  */
 package com.controller;
 
-import com.model.FiscalModel;
-import com.service.FiscalService;
+import com.model.OrganisationUserModel;
+import com.service.OrganisationUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -18,12 +17,17 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
 
-@RestController
-@RequestMapping("api/Fiscal")
-public class FiscalRestController {
+/**
+ *
+ * @author pratha
+ */
 
+@RestController
+@RequestMapping("api/User")
+public class OrganisationUserRestController {
+	
     @Autowired
-    FiscalService service;
+    OrganisationUserService service;
 
     @GetMapping
     public Object getRecord() {
@@ -31,12 +35,12 @@ public class FiscalRestController {
     }
 
     @PostMapping
-    public Object Save(@RequestBody FiscalModel obj) {
+    public Object Save(@RequestBody OrganisationUserModel obj) {
         return service.doSave(obj);
     }
 
     @PutMapping("/{id}")
-    public Object Update(@PathVariable long id, @RequestBody FiscalModel obj) {
+    public Object Update(@PathVariable long id, @RequestBody OrganisationUserModel obj) {
         return service.doUpdate(obj, id);
     }
 
