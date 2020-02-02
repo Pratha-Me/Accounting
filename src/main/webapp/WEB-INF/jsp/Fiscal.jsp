@@ -34,7 +34,7 @@
 								<label>id</label>
 								<input type='text' name='id' id='id' class='form-control'/>
 							</div>
-							<div class='col-lg-4 col-sm-2 col-md-2 col-xs-6'>
+							<div class='col-lg-5 col-sm-2 col-md-2 col-xs-6'>
 								<label>Fiscal Name</label>
 								<input type='text' name='name' id='name' class='form-control'/>
 							</div>
@@ -46,7 +46,7 @@
 								<label>End Date</label>
 								<input type='text' name='endDate' id='endDate' class='form-control'/>
 							</div>
-							<div class='col-lg-2 col-sm-2 col-md-2 col-xs-6'>
+							<div class='col-lg-1 col-sm-2 col-md-2 col-xs-6'>
 								<label>Status</label>
 								<input type='text' name='status' id='status' class='form-control'/>
 							</div>

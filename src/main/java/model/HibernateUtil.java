@@ -7,6 +7,8 @@ package model;
 
 import com.model.DummyModel;
 import com.model.FiscalModel;
+import com.model.OrganisationMasterModel;
+import com.model.OrganisationUserModel;
 import java.util.Properties;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -39,6 +41,8 @@ public class HibernateUtil {
 					.addProperties(property)
 					.addAnnotatedClass(DummyModel.class)
 					.addAnnotatedClass(FiscalModel.class)
+					.addAnnotatedClass(OrganisationMasterModel.class)
+					.addAnnotatedClass(OrganisationUserModel.class)
 					.buildSessionFactory();
 		} catch (Throwable ex) {
 			throw new ExceptionInInitializerError(ex);

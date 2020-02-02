@@ -21,7 +21,7 @@ import javax.persistence.Table;
 public class OrganisationMasterModel implements Serializable {
 	
 	@Id
-	@Column(name="ID", columnDefinition = "bigint", nullable = false)
+	@Column(name="ID", columnDefinition = "bigint")
 	private long id;
 	@Column(name="NAME", columnDefinition = "varchar(60)")
 	private String userName;

@@ -145,6 +145,8 @@
 						<div class="bg-white py-2 collapse-inner rounded">
 							<h6 class="collapse-header">Login Screens:</h6>
 							<a class="collapse-item" href="<%=path%>/DummyInfo">DummyInfo</a>
+							<a class="collapse-item" href="<%=path%>/Master">Master</a>
+							<a class="collapse-item" href="<%=path%>/User">User</a>
 							<a class="collapse-item" href="<%=path%>/Fiscal">Fiscal</a>
 							<a class="collapse-item" href="login.html">Login</a>
 							<a class="collapse-item" href="register.html">Register</a>

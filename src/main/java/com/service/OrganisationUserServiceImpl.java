@@ -28,7 +28,7 @@ public class OrganisationUserServiceImpl implements OrganisationUserService{
 
 	@Override
 	public Object getRecord() {
-		List list = dao.getRecord("from OrganisationUserModel");
+		List list = dao.getRecord("from OrganisationUserModelO");
 		if (!list.isEmpty()) {
 			return list;
 		}

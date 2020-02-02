@@ -24,9 +24,10 @@ import javax.persistence.TemporalType;
 public class OrganisationUserModel implements Serializable{
 	
 	@Id
-	@Column(name="ID", columnDefinition = "bigint", nullable = false)
+	@Column(name="ID", columnDefinition = "bigint")
 	private long id;
-	@Column(name="USER_ID", columnDefinition = "varchar(15)", nullable = false, unique = true)
+//	@Column(name="USER_ID", columnDefinition = "varchar(15)", nullable = false, unique = true)
+	@Column(name="USER_ID", columnDefinition = "varchar(15)", unique = true)
 	private String userID;
 	@Column(name="USER_NAME", columnDefinition = "varchar(60)")
 	private String userName;
